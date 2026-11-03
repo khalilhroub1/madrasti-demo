@@ -1,0 +1,92 @@
+<title>مدرستي</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: one teal masthead band, then a grid of account "keys" — pick who you are */
+:root {
+  --bg: #f2f6f5; --surface: #ffffff; --ink: #132826; --ink-2: #43605c; --muted: #7a908c; --coral: #f25c45;
+  --line: #e0e9e7; --brand: #0a6e69; --brand-ink: #e3f4f1; --accent: #ffb703; --accent-ink: #4a3300;
+  --chip: #dcf1ee;
+  --f-display: "Reem Kufi", "IBM Plex Sans Arabic", Tahoma, sans-serif;
+  --f-body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111a1c; --surface: #182326; --ink: #e9eeec; --ink-2: #b8c3c1; --muted: #8a9896; --line: #2a3a3d;
+  --brand: #075a56; --brand-ink: #dcefeb; --accent: #ffc233; --accent-ink: #3a2800; --chip: #143b37; --coral: #ff7b66; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111a1c; --surface: #182326; --ink: #e9eeec; --ink-2: #b8c3c1; --muted: #8a9896; --line: #2a3a3d;
+  --brand: #075a56; --brand-ink: #dcefeb; --accent: #ffc233; --accent-ink: #3a2800; --chip: #143b37; --coral: #ff7b66; color-scheme: dark; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.65; direction: rtl; }
+.wrap { max-width: 980px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.mast { background: linear-gradient(150deg, #0c7f79, var(--brand) 55%, #064f4b); color: var(--brand-ink); position: relative; overflow: hidden; }
+.mast::after { content: ""; position: absolute; width: 180px; height: 180px; border-radius: 50%; background: var(--accent); inset-inline-start: -60px; bottom: -80px; }
+.mast::before { content: ""; position: absolute; width: 44px; height: 44px; border-radius: 50%; background: var(--coral); inset-inline-start: 110px; bottom: 40px; }
+.mast .wrap { position: relative; z-index: 1; }
+@media (max-width: 640px) { .mast::after { width: 110px; height: 110px; inset-inline-start: auto; inset-inline-end: -40px; top: -40px; bottom: auto; } .mast::before { display: none; } }
+.mast .wrap { padding-block: 34px 40px; display: grid; gap: 14px; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.mark { width: 56px; height: 56px; display: block; }
+.logo b { font-family: var(--f-display); font-size: 1.35rem; color: #fff; letter-spacing: .01em; }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.6rem, 4.6vw, 2.5rem); line-height: 1.25; margin: 6px 0 0; color: #fff; text-wrap: balance; max-width: 20ch; }
+.lead { margin: 0; max-width: 60ch; opacity: .9; }
+.note { display: inline-flex; gap: 8px; align-items: center; background: rgba(255,255,255,.1); border-radius: 99px; padding: 5px 14px; font-size: .85rem; width: fit-content; }
+.note i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+main .wrap { padding-block: 28px 48px; }
+.label { font-size: .8rem; font-weight: 700; color: var(--muted); letter-spacing: .04em; margin: 0 0 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+a.key { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; align-items: start; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+a.key:hover, a.key:focus-visible { border-color: var(--brand); transform: translateY(-2px); outline: none; }
+a.key:focus-visible { box-shadow: 0 0 0 3px var(--chip); }
+.av { grid-row: span 3; width: 48px; height: 48px; border-radius: 50%; background: var(--chip); color: var(--brand); display: grid; place-items: center; font-weight: 700; }
+:root[data-theme="dark"] .av { color: var(--brand-ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .av { color: var(--brand-ink); } }
+.role { font-family: var(--f-display); font-size: 1.15rem; font-weight: 700; }
+.who { font-size: .85rem; color: var(--muted); }
+.what { font-size: .9rem; color: var(--ink-2); margin: 6px 0 0; min-width: 0; }
+.go { grid-column: 2; margin-top: 10px; font-weight: 600; color: var(--brand); font-size: .9rem; }
+:root[data-theme="dark"] .go { color: var(--accent); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .go { color: var(--accent); } }
+.key.primary { border-color: var(--accent); }
+.foot { margin-top: 26px; font-size: .88rem; color: var(--muted); max-width: 70ch; }
+@media (prefers-reduced-motion: reduce) { a.key { transition: none; } }
+</style>
+
+<header class="mast"><div class="wrap">
+  <div class="logo"><img class="mark" src="static/logo-mark.svg" alt=""><b style="font-size:1.8rem">مدرستي</b></div>
+  <h1>جرّب التطبيق من عيون كل مستخدم</h1>
+  <p class="lead">اختار حساب وتنقّل بحرية. البيانات لمدرسة تجريبية: «مدرسة النور النموذجية» بثلاث صفوف و15 طالب و6 معلمين.</p>
+  <span class="note"><i></i>نسخة عرض: كل الصفحات والتنقل شغّالين، والحفظ معطّل · جديد: هوية المدرسة والاشتراكات والتقارير الدورية</span>
+</div></header>
+
+<main><div class="wrap">
+  <p class="label">اختار الحساب</p>
+  <div class="grid">
+    <a class="key primary" href="parent-0.html">
+      <span class="av">ولي</span><span class="role">ولي الأمر</span><span class="who">محمد الحوراني · عنده ليان وعمر</span>
+      <p class="what">ملف كل ابن: الجدول، الواجبات، العلامات، تقييم المعلمين، الحصص الأونلاين، الرسوم والأقساط وسندات القبض، الإشعارات، ومراسلة المعلم.</p>
+      <span class="go">ادخل ←</span></a>
+    <a class="key" href="teacher-0.html">
+      <span class="av">مع</span><span class="role">المعلم</span><span class="who">أحمد العبادي · رياضيات</span>
+      <p class="what">حصص اليوم، صفوفه وطلابه، الواجبات ومتابعة التسليم، الامتحانات والعلامات، والتقييم.</p>
+      <span class="go">ادخل ←</span></a>
+    <a class="key" href="admin-0.html">
+      <span class="av">إد</span><span class="role">الإدارة</span><span class="who">أ. سميرة الخطيب</span>
+      <p class="what">لوحة تحكم شاملة، المستخدمين، جدول الحصص، المتابعة الأكاديمية، النظام المالي كامل، ومراقبة كل الرسائل.</p>
+      <span class="go">ادخل ←</span></a>
+    <a class="key" href="accountant-0.html">
+      <span class="av">مح</span><span class="role">المحاسب</span><span class="who">رامي · النظام المالي</span>
+      <p class="what">الطلاب والرسوم، الفوترة والأقساط، سندات القبض، الرواتب، المصروفات، القيود وميزان المراجعة، الميزانية، والتقارير.</p>
+      <span class="go">ادخل ←</span></a>
+    <a class="key" href="student-0.html">
+      <span class="av">طا</span><span class="role">الطالب</span><span class="who">ليان الحوراني · السابع أ</span>
+      <p class="what">ملفه الشخصي بكل تبويباته والإعلانات.</p>
+      <span class="go">ادخل ←</span></a>
+    <a class="key" href="platform-0.html">
+      <span class="av">من</span><span class="role">مدير المنصة</span><span class="who">إلك أنت كصاحب التطبيق</span>
+      <p class="what">المدارس المشتركة، الباقات والأسعار، دفعات الاشتراكات، وإعدادات الدفع.</p>
+      <span class="go">ادخل ←</span></a>
+  </div>
+  <p class="foot">هاي صفحات مأخوذة من التطبيق الحقيقي. بالنسخة الكاملة كل زر حفظ أو إرسال بيشتغل فعلياً، وكل مستخدم بيدخل باسم مستخدم وكلمة مرور خاصة فيه.</p>
+</div></main>

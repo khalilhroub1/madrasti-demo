@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="csrf" content="9933e455f4ff6d14e9e49e91c3f09c22">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>الباقات</title>
+  
+  <link rel="icon" href="static/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="static/icon-32.png" sizes="32x32" type="image/png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noopener">
+  <link rel="preconnect" href="https://fonts.gstatic.com" target="_blank" rel="noopener" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600;700&display=swap" target="_blank" rel="noopener" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css?v=4">
+  
+</head>
+<body><div class="demo-bar">نسخة عرض للتجربة · التنقل شغّال والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
+
+<div class="navprog" id="navprog"></div>
+<div class="splash" id="splash" hidden><div class="sp-in"><img src="static/logo-mark.svg" alt=""><b>مدرستي</b><div class="bar"></div></div></div>
+<script>try{if(!sessionStorage.getItem('sp')){document.getElementById('splash').hidden=false;sessionStorage.setItem('sp','1');}}catch(e){}</script>
+
+
+
+  
+  
+
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div><div><b>مدرستي</b><span>إدارة المنصة</span></div></div>
+    <nav class="nav">
+      
+        <a href="platform-0.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/></svg> المدارس
+          
+          
+        </a>
+      
+        <a href="platform-1.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg> الدفعات
+          
+          
+        </a>
+      
+        <a href="platform-2.html" class="on">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg> الباقات
+          
+          
+        </a>
+      
+        <a href="platform-3.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg> الإعدادات
+          
+          
+        </a>
+      
+    </nav>
+    <div class="side-foot">
+      <div class="who"><div class="avatar sm t1">ما</div>
+        <div><b style="color:#fff">مدير المنصة</b><br><span style="opacity:.7">مدير المنصة</span></div></div>
+      <div class="row">
+        <a href="platform-4.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
+        <a href="platform-4.html">حسابي</a>
+        <span class="spacer"></span>
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="9933e455f4ff6d14e9e49e91c3f09c22">
+          <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
+      </div>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div>
+      <div class="t">مدرستي</div>
+      
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="9933e455f4ff6d14e9e49e91c3f09c22">
+        <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
+    </header>
+    <main class="content">
+      
+      
+        
+      
+      
+<div class="page-head"><div><h1>باقات الاشتراك</h1><p>السعر = الأساسي (شهري أو سنوي) + سعر الطالب × عدد طلاب المدرسة × عدد الأشهر. حط صفر بأي خانة ما بدك إياها.</p></div></div>
+
+<form class="card" method="post"><input type="hidden" name="_csrf" value="9933e455f4ff6d14e9e49e91c3f09c22"><input type="hidden" name="action" value="save"><input type="hidden" name="id" value="1">
+  <h2>تعديل باقة</h2>
+  <div class="form-grid g-auto">
+    <div class="field"><label>اسم الباقة *</label><input name="name" required value="أساسية" placeholder="أساسية / متقدمة"></div>
+    <div class="field"><label>السعر الأساسي الشهري (د.أ)</label><input name="monthly_price" inputmode="decimal" value="25.0"></div>
+    <div class="field"><label>السعر الأساسي السنوي (د.أ)</label><input name="yearly_price" inputmode="decimal" value="250.0"></div>
+    <div class="field"><label>سعر الطالب شهرياً (د.أ)</label><input name="per_student" inputmode="decimal" value="0.0"></div>
+    <div class="field"><label>الحد الأعلى للطلاب (0 = مفتوح)</label><input name="max_students" inputmode="numeric" value="300"></div>
+    <div class="field"><label>الترتيب</label><input name="sort" inputmode="numeric" value="1"></div>
+  </div>
+  <div class="field"><label>وصف قصير</label><input name="description" value="التواصل والجداول والواجبات والإشعارات"></div>
+  <div class="row"><label class="check"><input type="checkbox" name="includes_finance" > تشمل النظام المالي</label>
+    <label class="check"><input type="checkbox" name="active" checked> ظاهرة للمدارس</label></div>
+  <div class="row mt"><button class="btn">حفظ</button><a class="btn ghost" href="platform-2.html">إلغاء</a></div>
+</form>
+<div class="card"><div class="table-wrap"><table><thead><tr><th>الباقة</th><th>شهري</th><th>سنوي</th><th>لكل طالب/شهر</th><th>حد الطلاب</th><th>المالية</th><th>مدارس</th><th>الحالة</th><th></th></tr></thead><tbody>
+<tr><td><b>أساسية</b><br><small class="muted">التواصل والجداول والواجبات والإشعارات</small></td>
+  <td>25.00</td><td>250.00</td><td>0.00</td>
+  <td>300</td><td>—</td><td>0</td>
+  <td><span class="badge ok">ظاهرة</span></td>
+  <td class="nowrap"><a class="btn ghost sm" href="platform-5.html">تعديل</a>
+    <form method="post" class="inline" style="display:inline" onsubmit="return confirm('حذف الباقة؟')"><input type="hidden" name="_csrf" value="9933e455f4ff6d14e9e49e91c3f09c22"><input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="1"><button class="btn danger sm">×</button></form></td></tr>
+<tr><td><b>متقدمة</b><br><small class="muted">كل الميزات مع النظام المالي الكامل</small></td>
+  <td>40.00</td><td>400.00</td><td>0.25</td>
+  <td>مفتوح</td><td>✓</td><td>0</td>
+  <td><span class="badge ok">ظاهرة</span></td>
+  <td class="nowrap"><a class="btn ghost sm" href="platform-6.html">تعديل</a>
+    <form method="post" class="inline" style="display:inline" onsubmit="return confirm('حذف الباقة؟')"><input type="hidden" name="_csrf" value="9933e455f4ff6d14e9e49e91c3f09c22"><input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="2"><button class="btn danger sm">×</button></form></td></tr>
+
+</tbody></table></div></div>
+
+    </main>
+  </div>
+  <nav class="bottom-nav">
+    
+      <a href="platform-0.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/></svg><span>المدارس</span>
+        
+        
+      </a>
+    
+      <a href="platform-1.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg><span>الدفعات</span>
+        
+        
+      </a>
+    
+      <a href="platform-2.html" class="on">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg><span>الباقات</span>
+        
+        
+      </a>
+    
+      <a href="platform-3.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg><span>الإعدادات</span>
+        
+        
+      </a>
+    
+      <a href="platform-4.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg><span>حسابي</span>
+        
+        
+      </a>
+    
+  </nav>
+</div>
+
+<script>
+  (function(){var sp=document.getElementById('splash');if(sp&&!sp.hidden){window.addEventListener('load',function(){setTimeout(function(){sp.classList.add('hide');setTimeout(function(){sp.remove()},400)},350)});}
+   var pg=document.getElementById('navprog');
+   document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||e.defaultPrevented||e.metaKey||e.ctrlKey||a.target==='_blank'||a.hasAttribute('download'))return;
+     var h=a.getAttribute('href');if(!h||h[0]==='#'||/^(mailto|tel|javascript):/.test(h)||a.origin!==location.origin)return;pg.classList.add('go');});
+   document.addEventListener('submit',function(e){var f=e.target;if(!f.target||f.target==='_self')setTimeout(function(){if(!e.defaultPrevented)pg.classList.add('go')},0);});
+   window.addEventListener('pageshow',function(){pg.classList.remove('go')});})();
+  if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js').catch(function(){}); }
+  var end = document.getElementById('end'); if (end) end.scrollIntoView();
+</script>
+
+<div class="demo-toast" id="demoToast" hidden></div>
+<script>
+(function(){var MAP={"/super/": "platform-0.html", "/super/payments": "platform-1.html", "/super/plans": "platform-2.html", "/super/settings": "platform-3.html", "/account": "platform-4.html", "/super/plans?edit=1": "platform-5.html", "/super/plans?edit=2": "platform-6.html"};var t;
+function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
+function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
+ var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
+document.addEventListener('submit',function(e){var f=e.target;e.preventDefault();
+ if(f.dataset.logout){location.href='index.html';return;}
+ if(f.dataset.path){var p=new URLSearchParams();new FormData(f).forEach(function(v,k){p.append(k,v)});var k=norm(f.dataset.path,p);
+   if(MAP[k]){location.href=MAP[k];return;} toast('هالفلتر مش متاح بنسخة العرض');return;}
+ toast('بنسخة العرض الحفظ معطّل — بالنسخة الكاملة بينحفظ فوراً ✓');});
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast('هالصفحة مش مضمّنة بنسخة العرض');}});
+var end=document.getElementById('end');if(end)end.scrollIntoView();
+})();
+</script></body>
+</html>
