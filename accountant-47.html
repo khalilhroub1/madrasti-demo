@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="csrf" content="721b845657519bf2cb156ca3b1401de7">
+  <meta name="csrf" content="07d717f6430973ed1ede023f35d9d79e">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>المصروفات — مدرسة النور النموذجية</title>
@@ -91,7 +91,7 @@
         <a href="accountant-11.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
         <a href="accountant-11.html">حسابي</a>
         <span class="spacer"></span>
-        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
           <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
       </div>
     </div>
@@ -103,7 +103,7 @@
       
       <a href="accountant-9.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" hidden>0</span></a>
       
-      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
         <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
     </header>
     <main class="content">
@@ -129,7 +129,7 @@
     
   </div>
   <form class="fin-year" method="post" action="/finance/year">
-    <input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7"><input type="hidden" name="next" value="/finance/expenses?edit=34">
+    <input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="next" value="/finance/expenses?edit=34">
     <label for="fy" class="sr">السنة الدراسية</label>
     <select id="fy" name="year_id" onchange="this.form.requestSubmit()">
       <option value="4" >2028/2029</option><option value="3" >2027/2028</option><option value="2" selected>2026/2027 · الحالية</option><option value="1" >2025/2026</option>
@@ -145,13 +145,13 @@
 <a class="btn ghost sm" href="#" data-missing="1">Excel</a><a class="btn" href="accountant-45.html">+ مصروف</a></div></div>
 
 
-<form class="card" method="post" enctype="multipart/form-data" id="form"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7"><input type="hidden" name="action" value="save"><input type="hidden" name="id" value="34">
+<form class="card" method="post" enctype="multipart/form-data" id="form"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="save"><input type="hidden" name="id" value="34">
   <h2>تعديل المصروف</h2>
   <p class="flash ok">هذا المصروف مرتبط تلقائياً بـمشتريات مقصف — قد تُعاد مزامنته عند تعديل المصدر.</p>
   <div class="form-grid g-auto">
     <div class="field"><label>البند</label><select name="category_id" required><option value="">اختر</option><option value="5" >أنشطة</option><option value="4" >إنترنت</option><option value="10" >الأمن والحماية</option><option value="11" >الرواتب</option><option value="9" >الصيانة</option><option value="13" selected>المقصف</option><option value="1" >تأسيس</option><option value="7" >رواتب الموظفين</option><option value="6" >قرطاسية</option><option value="2" >كهرباء</option><option value="3" >ماء</option><option value="12" >مدفوعات الموردين</option><option value="8" >مصاريف الباصات</option></select></div>
     <div class="field"><label>المبلغ</label><input name="amount" inputmode="decimal" required value="90.0"></div>
-    <div class="field"><label>التاريخ</label><input type="date" name="expense_date" value="2026-11-03"></div>
+    <div class="field"><label>التاريخ</label><input type="date" name="expense_date" value="2026-11-04"></div>
     <div class="field"><label>طريقة الدفع</label><select name="paid_from"><option value="cash" selected>كاش</option><option value="visa" >فيزا</option><option value="click" >كليك</option><option value="bank" >حوالة بنكية</option></select></div>
     <div class="field"><label>جهة الصرف (لمن)</label><input name="paid_to" value="سندويشة زعتر"></div>
     <div class="field"><label>رقم الفاتورة</label><input name="invoice_number" value=""></div>
@@ -170,7 +170,7 @@
     <div class="field grow2"><label>البند</label><select name="cat"><option value="all">كل البنود</option><option value="5" >أنشطة</option><option value="4" >إنترنت</option><option value="10" >الأمن والحماية</option><option value="11" >الرواتب</option><option value="9" >الصيانة</option><option value="13" >المقصف</option><option value="1" >تأسيس</option><option value="7" >رواتب الموظفين</option><option value="6" >قرطاسية</option><option value="2" >كهرباء</option><option value="3" >ماء</option><option value="12" >مدفوعات الموردين</option><option value="8" >مصاريف الباصات</option></select></div>
     <div class="field"><label>&nbsp;</label><button class="btn ghost">تطبيق</button></div>
   </form>
-  <form class="card row" method="post" style="align-items:flex-end"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7"><input type="hidden" name="action" value="category">
+  <form class="card row" method="post" style="align-items:flex-end"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="category">
     <div class="field grow2 mb0"><label>بند جديد</label><input name="name" placeholder="اسم البند"></div><button class="btn ghost">+</button></form>
 </div>
 
@@ -180,59 +180,59 @@
   <h2>سجل المصروفات</h2>
   <div class="table-wrap"><table class="ft"><thead><tr><th>التاريخ</th><th>البند</th><th>المبلغ</th><th>جهة الصرف</th><th>من</th><th>رقم الفاتورة</th><th>مرفق</th><th>وصف</th><th></th></tr></thead><tbody>
   
-    <tr><td>3/11/2026</td><td>المقصف</td><td class="warn"><b>50</b></td><td>ماء صغير</td>
+    <tr><td>4/11/2026</td><td>المقصف</td><td class="warn"><b>50</b></td><td>ماء صغير</td>
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">مشتريات مقصف: ماء صغير</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-46.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-46.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="35">
 <button class="btn danger sm">×</button></form></td></tr>
   
-    <tr><td>3/11/2026</td><td>المقصف</td><td class="warn"><b>90</b></td><td>سندويشة زعتر</td>
+    <tr><td>4/11/2026</td><td>المقصف</td><td class="warn"><b>90</b></td><td>سندويشة زعتر</td>
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">مشتريات مقصف: سندويشة زعتر</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-47.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-47.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="34">
 <button class="btn danger sm">×</button></form></td></tr>
   
-    <tr><td>3/11/2026</td><td>المقصف</td><td class="warn"><b>100</b></td><td>عصير برتقال</td>
+    <tr><td>4/11/2026</td><td>المقصف</td><td class="warn"><b>100</b></td><td>عصير برتقال</td>
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">مشتريات مقصف: عصير برتقال</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-48.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-48.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="33">
 <button class="btn danger sm">×</button></form></td></tr>
   
-    <tr><td>3/11/2026</td><td>الصيانة</td><td class="warn"><b>172</b></td><td>ورشة الصيانة</td>
+    <tr><td>4/11/2026</td><td>الصيانة</td><td class="warn"><b>172</b></td><td>ورشة الصيانة</td>
       <td><span class="badge">بنك</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة الصيانة 11/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-49.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-49.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="30">
 <button class="btn danger sm">×</button></form></td></tr>
   
-    <tr><td>3/11/2026</td><td>إنترنت</td><td class="warn"><b>45</b></td><td>أورنج</td>
+    <tr><td>4/11/2026</td><td>إنترنت</td><td class="warn"><b>45</b></td><td>أورنج</td>
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة إنترنت 11/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-50.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-50.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="29">
 <button class="btn danger sm">×</button></form></td></tr>
   
-    <tr><td>3/11/2026</td><td>ماء</td><td class="warn"><b>99</b></td><td>مياهنا</td>
+    <tr><td>4/11/2026</td><td>ماء</td><td class="warn"><b>99</b></td><td>مياهنا</td>
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة ماء 11/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-51.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-51.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="28">
 <button class="btn danger sm">×</button></form></td></tr>
   
-    <tr><td>3/11/2026</td><td>كهرباء</td><td class="warn"><b>418</b></td><td>شركة الكهرباء الأردنية</td>
+    <tr><td>4/11/2026</td><td>كهرباء</td><td class="warn"><b>418</b></td><td>شركة الكهرباء الأردنية</td>
       <td><span class="badge">بنك</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة كهرباء 11/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-52.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-52.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="27">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -240,7 +240,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب سائق: محمود العتوم - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-53.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-53.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="18">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -248,7 +248,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب سائق: أبو سامي الدعجة - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-54.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-54.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="17">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -256,7 +256,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: أم أحمد (مستخدمة) - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-55.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-55.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="16">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -264,7 +264,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: هبة النسور - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-56.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-56.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="15">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -272,7 +272,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: يوسف الشرع - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-57.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-57.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="14">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -280,7 +280,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: خالد المومني - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-58.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-58.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="13">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -288,7 +288,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: رانيا حدّاد - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-59.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-59.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="12">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -296,7 +296,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: منى الزعبي - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-60.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-60.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="11">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -304,7 +304,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: أحمد العبادي - راتب 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-61.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-61.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="10">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -312,7 +312,7 @@
       <td><span class="badge">بنك</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة كهرباء 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-62.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-62.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="23">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -320,7 +320,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة إنترنت 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-63.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-63.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="25">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -328,7 +328,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة الصيانة 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-64.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-64.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="26">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -336,7 +336,7 @@
       <td><span class="badge">بنك</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة ماء 10/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-65.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-65.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="24">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -344,7 +344,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب سائق: محمود العتوم - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-66.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-66.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="9">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -352,7 +352,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب سائق: أبو سامي الدعجة - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-67.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-67.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="8">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -360,7 +360,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: أم أحمد (مستخدمة) - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-68.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-68.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="7">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -368,7 +368,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: هبة النسور - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-69.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-69.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="6">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -376,7 +376,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: يوسف الشرع - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-70.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-70.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="5">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -384,7 +384,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: خالد المومني - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-71.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-71.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="4">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -392,7 +392,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: رانيا حدّاد - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-72.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-72.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="3">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -400,7 +400,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: منى الزعبي - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-73.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-73.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="2">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -408,7 +408,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">راتب موظف: أحمد العبادي - راتب 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="accountant-74.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="accountant-74.html">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="1">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -416,7 +416,7 @@
       <td><span class="badge">بنك</span></td><td>—</td>
       <td>—</td>
       <td class="muted">دفعة مورد: مصنع الأمل للزي</td>
-      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="32">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -424,7 +424,7 @@
       <td><span class="badge">بنك</span></td><td>—</td>
       <td>—</td>
       <td class="muted">دفعة مورد: مكتبة الرسالة</td>
-      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="31">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -432,7 +432,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة الصيانة 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="22">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -440,7 +440,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة إنترنت 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="21">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -448,7 +448,7 @@
       <td><span class="badge">كاش</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة ماء 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="20">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -456,7 +456,7 @@
       <td><span class="badge">بنك</span></td><td>—</td>
       <td>—</td>
       <td class="muted">فاتورة كهرباء 9/2026</td>
-      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="721b845657519bf2cb156ca3b1401de7">
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">تعديل</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('حذف المصروف وقيده؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="19">
 <button class="btn danger sm">×</button></form></td></tr>
   
@@ -535,7 +535,7 @@
 
 <div class="demo-toast" id="demoToast" hidden></div>
 <script>
-(function(){var MAP={"/finance/": "accountant-0.html", "/finance/students": "accountant-1.html", "/finance/reports/analytics": "accountant-2.html", "/finance/journal?tab=trial": "accountant-3.html", "/finance/budget": "accountant-4.html", "/finance/billing": "accountant-5.html", "/finance/expenses": "accountant-6.html", "/finance/journal": "accountant-7.html", "/finance/reports/financial": "accountant-8.html", "/notifications": "accountant-9.html", "/announcements": "accountant-10.html", "/account": "accountant-11.html", "/finance/staff": "accountant-12.html", "/finance/accounts": "accountant-13.html", "/finance/reports/period": "accountant-14.html", "/finance/cards": "accountant-15.html", "/finance/inquiries": "accountant-16.html", "/finance/desk": "accountant-17.html", "/finance/payment-split": "accountant-18.html", "/finance/years": "accountant-19.html", "/finance/parents/new": "accountant-20.html", "/finance/reports/payments-detail": "accountant-21.html", "/finance/parents/5": "accountant-22.html", "/finance/parents/12": "accountant-23.html", "/finance/parents/4": "accountant-24.html", "/finance/inventory": "accountant-25.html", "/finance/students/reports": "accountant-26.html", "/finance/reports/monthly-summary": "accountant-27.html", "/finance/reports/expenses-monthly": "accountant-28.html", "/finance/reports/monthly": "accountant-29.html", "/finance/reports/income-monthly": "accountant-30.html", "/finance/reports/expenses-detail": "accountant-31.html", "/finance/reports/contracts-detail": "accountant-32.html", "/finance/journal?from=2026-01-01&tab=entries&to=2026-11-03": "accountant-33.html", "/finance/journal?from=2026-01-01&tab=trial&to=2026-11-03": "accountant-34.html", "/finance/journal?from=2026-01-01&tab=new&to=2026-11-03": "accountant-35.html", "/finance/budget?new=1": "accountant-36.html", "/finance/budget?b=1": "accountant-37.html", "/finance/budget?b=1&edit=1": "accountant-38.html", "/finance/budget?b=1&edit_line=1": "accountant-39.html", "/finance/budget?b=1&edit_line=2": "accountant-40.html", "/finance/budget?b=1&edit_line=3": "accountant-41.html", "/finance/budget?b=1&edit_line=4": "accountant-42.html", "/finance/suppliers": "accountant-43.html", "/finance/canteen": "accountant-44.html", "/finance/expenses?new=1": "accountant-45.html", "/finance/expenses?edit=35": "accountant-46.html", "/finance/expenses?edit=34": "accountant-47.html", "/finance/expenses?edit=33": "accountant-48.html", "/finance/expenses?edit=30": "accountant-49.html", "/finance/expenses?edit=29": "accountant-50.html", "/finance/expenses?edit=28": "accountant-51.html", "/finance/expenses?edit=27": "accountant-52.html", "/finance/expenses?edit=18": "accountant-53.html", "/finance/expenses?edit=17": "accountant-54.html", "/finance/expenses?edit=16": "accountant-55.html", "/finance/expenses?edit=15": "accountant-56.html", "/finance/expenses?edit=14": "accountant-57.html", "/finance/expenses?edit=13": "accountant-58.html", "/finance/expenses?edit=12": "accountant-59.html", "/finance/expenses?edit=11": "accountant-60.html", "/finance/expenses?edit=10": "accountant-61.html", "/finance/expenses?edit=23": "accountant-62.html", "/finance/expenses?edit=25": "accountant-63.html", "/finance/expenses?edit=26": "accountant-64.html", "/finance/expenses?edit=24": "accountant-65.html", "/finance/expenses?edit=9": "accountant-66.html", "/finance/expenses?edit=8": "accountant-67.html", "/finance/expenses?edit=7": "accountant-68.html", "/finance/expenses?edit=6": "accountant-69.html", "/finance/expenses?edit=5": "accountant-70.html", "/finance/expenses?edit=4": "accountant-71.html", "/finance/expenses?edit=3": "accountant-72.html", "/finance/expenses?edit=2": "accountant-73.html", "/finance/expenses?edit=1": "accountant-74.html"};var t;
+(function(){var MAP={"/finance/": "accountant-0.html", "/finance/students": "accountant-1.html", "/finance/reports/analytics": "accountant-2.html", "/finance/journal?tab=trial": "accountant-3.html", "/finance/budget": "accountant-4.html", "/finance/billing": "accountant-5.html", "/finance/expenses": "accountant-6.html", "/finance/journal": "accountant-7.html", "/finance/reports/financial": "accountant-8.html", "/notifications": "accountant-9.html", "/announcements": "accountant-10.html", "/account": "accountant-11.html", "/finance/staff": "accountant-12.html", "/finance/accounts": "accountant-13.html", "/finance/reports/period": "accountant-14.html", "/finance/cards": "accountant-15.html", "/finance/inquiries": "accountant-16.html", "/finance/desk": "accountant-17.html", "/finance/payment-split": "accountant-18.html", "/finance/years": "accountant-19.html", "/finance/parents/new": "accountant-20.html", "/finance/reports/payments-detail": "accountant-21.html", "/finance/parents/5": "accountant-22.html", "/finance/parents/12": "accountant-23.html", "/finance/parents/4": "accountant-24.html", "/finance/inventory": "accountant-25.html", "/finance/students/reports": "accountant-26.html", "/finance/reports/monthly-summary": "accountant-27.html", "/finance/reports/expenses-monthly": "accountant-28.html", "/finance/reports/monthly": "accountant-29.html", "/finance/reports/income-monthly": "accountant-30.html", "/finance/reports/expenses-detail": "accountant-31.html", "/finance/reports/contracts-detail": "accountant-32.html", "/finance/journal?from=2026-01-01&tab=entries&to=2026-11-04": "accountant-33.html", "/finance/journal?from=2026-01-01&tab=trial&to=2026-11-04": "accountant-34.html", "/finance/journal?from=2026-01-01&tab=new&to=2026-11-04": "accountant-35.html", "/finance/budget?new=1": "accountant-36.html", "/finance/budget?b=1": "accountant-37.html", "/finance/budget?b=1&edit=1": "accountant-38.html", "/finance/budget?b=1&edit_line=1": "accountant-39.html", "/finance/budget?b=1&edit_line=2": "accountant-40.html", "/finance/budget?b=1&edit_line=3": "accountant-41.html", "/finance/budget?b=1&edit_line=4": "accountant-42.html", "/finance/suppliers": "accountant-43.html", "/finance/canteen": "accountant-44.html", "/finance/expenses?new=1": "accountant-45.html", "/finance/expenses?edit=35": "accountant-46.html", "/finance/expenses?edit=34": "accountant-47.html", "/finance/expenses?edit=33": "accountant-48.html", "/finance/expenses?edit=30": "accountant-49.html", "/finance/expenses?edit=29": "accountant-50.html", "/finance/expenses?edit=28": "accountant-51.html", "/finance/expenses?edit=27": "accountant-52.html", "/finance/expenses?edit=18": "accountant-53.html", "/finance/expenses?edit=17": "accountant-54.html", "/finance/expenses?edit=16": "accountant-55.html", "/finance/expenses?edit=15": "accountant-56.html", "/finance/expenses?edit=14": "accountant-57.html", "/finance/expenses?edit=13": "accountant-58.html", "/finance/expenses?edit=12": "accountant-59.html", "/finance/expenses?edit=11": "accountant-60.html", "/finance/expenses?edit=10": "accountant-61.html", "/finance/expenses?edit=23": "accountant-62.html", "/finance/expenses?edit=25": "accountant-63.html", "/finance/expenses?edit=26": "accountant-64.html", "/finance/expenses?edit=24": "accountant-65.html", "/finance/expenses?edit=9": "accountant-66.html", "/finance/expenses?edit=8": "accountant-67.html", "/finance/expenses?edit=7": "accountant-68.html", "/finance/expenses?edit=6": "accountant-69.html", "/finance/expenses?edit=5": "accountant-70.html", "/finance/expenses?edit=4": "accountant-71.html", "/finance/expenses?edit=3": "accountant-72.html", "/finance/expenses?edit=2": "accountant-73.html", "/finance/expenses?edit=1": "accountant-74.html"};var t;
 function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
 function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
  var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
