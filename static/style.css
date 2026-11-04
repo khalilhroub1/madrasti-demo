@@ -607,6 +607,24 @@ table.gb td.low { color: var(--bad); font-weight: 600; }
 .k-absence { background: var(--bad-soft); } .k-leave { background: var(--info-soft); } .k-event { background: var(--accent-soft); }
 .k-meeting { background: var(--brand-soft); } .k-submission { background: var(--ok-soft); } .k-behavior { background: var(--warn-soft); }
 
+/* ================= اللغة وبوابة المالك ================= */
+.lang-switch { position: absolute; top: 14px; inset-inline-end: 16px; z-index: 5; padding: 6px 14px; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); font-weight: 600; font-size: .85rem; text-decoration: none !important; }
+.auth-wrap { position: relative; }
+.lang-mini { font-weight: 700; padding: 2px 8px; border: 1px solid var(--line); border-radius: 8px; font-size: .75rem; }
+.topbar a.lang-top { font-weight: 700; font-size: .78rem; width: auto; padding: 0 8px; border: 1px solid var(--line); height: 30px; }
+.owner-wrap { min-height: 100vh; display: grid; place-items: center; padding: 20px; position: relative; background: radial-gradient(circle at 20% 10%, var(--brand-soft), transparent 40%), var(--bg); }
+.owner-card { width: 100%; max-width: 400px; padding: 28px; }
+html[dir="ltr"] .nav a.on::before { border-radius: 4px 0 0 4px; }
+html[dir="ltr"] body { font-family: "IBM Plex Sans Arabic", "Segoe UI", system-ui, sans-serif; }
+
+/* عناصر الشبكة لا تتجاوز عرض الشاشة */
+.grid > * { min-width: 0; }
+
+.demo-hint{margin-top:14px;font-size:.86rem;color:var(--muted)}
+.demo-hint summary{cursor:pointer;font-weight:600;color:var(--brand)}
+.demo-hint div{margin-top:8px;line-height:1.9}
+.demo-accts{list-style:none;padding:0;margin:6px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:2px 12px}
+.demo-accts li{display:flex;justify-content:space-between;gap:8px}
 .demo-bar{background:var(--accent-soft);color:var(--ink);font-size:.82rem;padding:7px 16px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;border-bottom:1px solid var(--line)}
 .demo-bar a{font-weight:700}
 .demo-toast{position:fixed;inset-inline:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));margin:auto;max-width:420px;background:var(--ink);color:var(--bg);padding:12px 16px;border-radius:12px;font-size:.9rem;z-index:50;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.25)}

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="csrf" content="721c85e8106fa8c5cb2a0c48654ef1fc">
+  <meta name="csrf" content="8fc9d2d2ce4c04d39167825625a1ae09">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>القيود اليومية — مدرسة النور النموذجية</title>
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="static/style.css?v=4">
   
 </head>
-<body><div class="demo-bar">نسخة عرض للتجربة · التنقل شغّال والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
+<body><div class="demo-bar">نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
 
 <div class="navprog" id="navprog"></div>
 <div class="splash" id="splash" hidden><div class="sp-in"><img src="static/logo-mark.svg" alt=""><b>مدرسة النور النموذجية</b><div class="bar"></div></div></div>
@@ -90,8 +90,9 @@
       <div class="row">
         <a href="accountant-11.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
         <a href="accountant-11.html">حسابي</a>
+        <a class="lang-mini" href="en-accountant-7.html" title="Language">EN</a>
         <span class="spacer"></span>
-        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="8fc9d2d2ce4c04d39167825625a1ae09">
           <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
       </div>
     </div>
@@ -101,9 +102,10 @@
       <div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div>
       <div class="t">مدرسة النور النموذجية</div>
       
+      <a class="lang-top" href="en-accountant-7.html" aria-label="Language">EN</a>
       <a href="accountant-9.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" hidden>0</span></a>
       
-      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="8fc9d2d2ce4c04d39167825625a1ae09">
         <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
     </header>
     <main class="content">
@@ -129,7 +131,7 @@
     
   </div>
   <form class="fin-year" method="post" action="/finance/year">
-    <input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="next" value="/finance/journal?">
+    <input type="hidden" name="_csrf" value="8fc9d2d2ce4c04d39167825625a1ae09"><input type="hidden" name="next" value="/finance/journal?">
     <label for="fy" class="sr">السنة الدراسية</label>
     <select id="fy" name="year_id" onchange="this.form.requestSubmit()">
       <option value="4" >2028/2029</option><option value="3" >2027/2028</option><option value="2" selected>2026/2027 · الحالية</option><option value="1" >2025/2026</option>
@@ -153,11 +155,11 @@
 </div>
 <div class="row mt" style="justify-content:space-between">
   <div class="chips">
-    <a class="chip on" href="accountant-33.html">القيود</a>
-    <a class="chip " href="accountant-34.html">ميزان المراجعة</a>
-    <a class="chip " href="accountant-35.html">+ قيد يدوي</a>
+    <a class="chip on" href="accountant-32.html">القيود</a>
+    <a class="chip " href="accountant-33.html">ميزان المراجعة</a>
+    <a class="chip " href="accountant-34.html">+ قيد يدوي</a>
   </div>
-  <form method="post" class="row"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="recognize">
+  <form method="post" class="row"><input type="hidden" name="_csrf" value="8fc9d2d2ce4c04d39167825625a1ae09"><input type="hidden" name="action" value="recognize">
     <select name="m" aria-label="الشهر"><option value="1" >كانون2</option><option value="2" >شباط</option><option value="3" >آذار</option><option value="4" >نيسان</option><option value="5" >أيار</option><option value="6" >حزيران</option><option value="7" >تموز</option><option value="8" >آب</option><option value="9" >أيلول</option><option value="10" >تشرين1</option><option value="11" selected>تشرين2</option><option value="12" >كانون1</option></select>
     <input name="y" value="2026" style="width:80px" aria-label="السنة">
     <button class="btn ghost sm">الاعتراف بإيراد الشهر</button></form>
@@ -1884,7 +1886,7 @@
 </script>
 
 <div class="push-nudge" id="pushNudge" hidden>
-  <span>🔔 فعّل الإشعارات حتى يوصلك كل جديد على الجوال</span>
+  <span>🔔 فعّل الإشعارات ليصلك كل جديد على هاتفك</span>
   <a class="btn accent sm" href="accountant-9.html">تفعيل</a>
   <button class="linkbtn" id="nudgeX" aria-label="إخفاء">×</button>
 </div>
@@ -1906,16 +1908,16 @@
 
 <div class="demo-toast" id="demoToast" hidden></div>
 <script>
-(function(){var MAP={"/finance/": "accountant-0.html", "/finance/students": "accountant-1.html", "/finance/reports/analytics": "accountant-2.html", "/finance/journal?tab=trial": "accountant-3.html", "/finance/budget": "accountant-4.html", "/finance/billing": "accountant-5.html", "/finance/expenses": "accountant-6.html", "/finance/journal": "accountant-7.html", "/finance/reports/financial": "accountant-8.html", "/notifications": "accountant-9.html", "/announcements": "accountant-10.html", "/account": "accountant-11.html", "/finance/staff": "accountant-12.html", "/finance/accounts": "accountant-13.html", "/finance/reports/period": "accountant-14.html", "/finance/cards": "accountant-15.html", "/finance/inquiries": "accountant-16.html", "/finance/desk": "accountant-17.html", "/finance/payment-split": "accountant-18.html", "/finance/years": "accountant-19.html", "/finance/parents/new": "accountant-20.html", "/finance/reports/payments-detail": "accountant-21.html", "/finance/parents/5": "accountant-22.html", "/finance/parents/12": "accountant-23.html", "/finance/parents/4": "accountant-24.html", "/finance/inventory": "accountant-25.html", "/finance/students/reports": "accountant-26.html", "/finance/reports/monthly-summary": "accountant-27.html", "/finance/reports/expenses-monthly": "accountant-28.html", "/finance/reports/monthly": "accountant-29.html", "/finance/reports/income-monthly": "accountant-30.html", "/finance/reports/expenses-detail": "accountant-31.html", "/finance/reports/contracts-detail": "accountant-32.html", "/finance/journal?from=2026-01-01&tab=entries&to=2026-11-04": "accountant-33.html", "/finance/journal?from=2026-01-01&tab=trial&to=2026-11-04": "accountant-34.html", "/finance/journal?from=2026-01-01&tab=new&to=2026-11-04": "accountant-35.html", "/finance/budget?new=1": "accountant-36.html", "/finance/budget?b=1": "accountant-37.html", "/finance/budget?b=1&edit=1": "accountant-38.html", "/finance/budget?b=1&edit_line=1": "accountant-39.html", "/finance/budget?b=1&edit_line=2": "accountant-40.html", "/finance/budget?b=1&edit_line=3": "accountant-41.html", "/finance/budget?b=1&edit_line=4": "accountant-42.html", "/finance/suppliers": "accountant-43.html", "/finance/canteen": "accountant-44.html", "/finance/expenses?new=1": "accountant-45.html", "/finance/expenses?edit=35": "accountant-46.html", "/finance/expenses?edit=34": "accountant-47.html", "/finance/expenses?edit=33": "accountant-48.html", "/finance/expenses?edit=30": "accountant-49.html", "/finance/expenses?edit=29": "accountant-50.html", "/finance/expenses?edit=28": "accountant-51.html", "/finance/expenses?edit=27": "accountant-52.html", "/finance/expenses?edit=18": "accountant-53.html", "/finance/expenses?edit=17": "accountant-54.html", "/finance/expenses?edit=16": "accountant-55.html", "/finance/expenses?edit=15": "accountant-56.html", "/finance/expenses?edit=14": "accountant-57.html", "/finance/expenses?edit=13": "accountant-58.html", "/finance/expenses?edit=12": "accountant-59.html", "/finance/expenses?edit=11": "accountant-60.html", "/finance/expenses?edit=10": "accountant-61.html", "/finance/expenses?edit=23": "accountant-62.html", "/finance/expenses?edit=25": "accountant-63.html", "/finance/expenses?edit=26": "accountant-64.html", "/finance/expenses?edit=24": "accountant-65.html", "/finance/expenses?edit=9": "accountant-66.html", "/finance/expenses?edit=8": "accountant-67.html", "/finance/expenses?edit=7": "accountant-68.html", "/finance/expenses?edit=6": "accountant-69.html", "/finance/expenses?edit=5": "accountant-70.html", "/finance/expenses?edit=4": "accountant-71.html", "/finance/expenses?edit=3": "accountant-72.html", "/finance/expenses?edit=2": "accountant-73.html", "/finance/expenses?edit=1": "accountant-74.html"};var t;
+(function(){var MAP={"/finance/": "accountant-0.html", "/finance/students": "accountant-1.html", "/finance/reports/analytics": "accountant-2.html", "/finance/journal?tab=trial": "accountant-3.html", "/finance/budget": "accountant-4.html", "/finance/billing": "accountant-5.html", "/finance/expenses": "accountant-6.html", "/finance/journal": "accountant-7.html", "/finance/reports/financial": "accountant-8.html", "/notifications": "accountant-9.html", "/announcements": "accountant-10.html", "/account": "accountant-11.html", "/finance/staff": "accountant-12.html", "/finance/accounts": "accountant-13.html", "/finance/reports/period": "accountant-14.html", "/finance/cards": "accountant-15.html", "/finance/inquiries": "accountant-16.html", "/finance/desk": "accountant-17.html", "/finance/payment-split": "accountant-18.html", "/finance/years": "accountant-19.html", "/finance/parents/new": "accountant-20.html", "/finance/reports/payments-detail": "accountant-21.html", "/finance/parents/5": "accountant-22.html", "/finance/parents/12": "accountant-23.html", "/finance/inventory": "accountant-24.html", "/finance/students/reports": "accountant-25.html", "/finance/reports/monthly-summary": "accountant-26.html", "/finance/reports/expenses-monthly": "accountant-27.html", "/finance/reports/monthly": "accountant-28.html", "/finance/reports/income-monthly": "accountant-29.html", "/finance/reports/expenses-detail": "accountant-30.html", "/finance/reports/contracts-detail": "accountant-31.html", "/finance/journal?from=2026-01-01&tab=entries&to=2026-11-04": "accountant-32.html", "/finance/journal?from=2026-01-01&tab=trial&to=2026-11-04": "accountant-33.html", "/finance/journal?from=2026-01-01&tab=new&to=2026-11-04": "accountant-34.html", "/finance/budget?new=1": "accountant-35.html", "/finance/budget?b=1": "accountant-36.html", "/finance/budget?b=1&edit=1": "accountant-37.html", "/finance/budget?b=1&edit_line=1": "accountant-38.html", "/finance/budget?b=1&edit_line=2": "accountant-39.html", "/finance/budget?b=1&edit_line=3": "accountant-40.html", "/finance/budget?b=1&edit_line=4": "accountant-41.html", "/finance/suppliers": "accountant-42.html", "/finance/canteen": "accountant-43.html", "/finance/expenses?new=1": "accountant-44.html", "/finance/expenses?edit=35": "accountant-45.html", "/finance/expenses?edit=34": "accountant-46.html", "/finance/expenses?edit=33": "accountant-47.html"};var TX={"bar": "نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل", "switch": "تغيير الحساب", "filter": "هذا التصفية غير متاحة في نسخة العرض", "save": "الحفظ معطّل في نسخة العرض — ويتم فوراً في النسخة الكاملة ✓", "missing": "هذه الصفحة غير مضمّنة في نسخة العرض", "bad": "بيانات الدخول غير صحيحة. استخدم أحد الحسابات التجريبية.", "demo": "حسابات تجريبية", "pw": "كلمة المرور لجميع الحسابات", "code": "رمز المدرسة", "roles": {"admin": "الإدارة", "teacher": "معلم", "parent": "ولي أمر", "student": "طالب", "accountant": "المحاسب"}};var HOME="index.html";var t;
 function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
 function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
  var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
 document.addEventListener('submit',function(e){var f=e.target;e.preventDefault();
- if(f.dataset.logout){location.href='index.html';return;}
+ if(f.dataset.logout){location.href=HOME;return;}
  if(f.dataset.path){var p=new URLSearchParams();new FormData(f).forEach(function(v,k){p.append(k,v)});var k=norm(f.dataset.path,p);
-   if(MAP[k]){location.href=MAP[k];return;} toast('هالفلتر مش متاح بنسخة العرض');return;}
- toast('بنسخة العرض الحفظ معطّل — بالنسخة الكاملة بينحفظ فوراً ✓');});
-document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast('هالصفحة مش مضمّنة بنسخة العرض');}});
+   if(MAP[k]){location.href=MAP[k];return;} toast(TX.filter);return;}
+ toast(TX.save);});
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast(TX.missing);}});
 var end=document.getElementById('end');if(end)end.scrollIntoView();
 })();
 </script></body>

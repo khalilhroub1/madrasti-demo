@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="csrf" content="8fd4f129dacfc6152ace1759c69a3333">
+  <meta name="csrf" content="8c7f77dd922657ebf88ad3a44ab7c406">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>التقييم الشهري والنهائي — مدرسة النور النموذجية</title>
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="static/style.css?v=4">
   
 </head>
-<body><div class="demo-bar">نسخة عرض للتجربة · التنقل شغّال والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
+<body><div class="demo-bar">نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
 
 <div class="navprog" id="navprog"></div>
 <div class="splash" id="splash" hidden><div class="sp-in"><img src="static/logo-mark.svg" alt=""><b>مدرسة النور النموذجية</b><div class="bar"></div></div></div>
@@ -84,7 +84,7 @@
         </a>
       
         <a href="teacher-8.html" class="">
-          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg> حصص أونلاين
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg> حصص عبر الإنترنت
           
           
         </a>
@@ -116,7 +116,7 @@
         <a href="teacher-13.html" class="">
           <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg> الإشعارات
           
-          <span class="badge solid" data-count="unread" >1</span>
+          <span class="badge solid" data-count="unread" hidden>0</span>
         </a>
       
         <a href="teacher-14.html" class="">
@@ -132,8 +132,9 @@
       <div class="row">
         <a href="teacher-15.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
         <a href="teacher-15.html">حسابي</a>
+        <a class="lang-mini" href="en-teacher-7.html" title="Language">EN</a>
         <span class="spacer"></span>
-        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="8fd4f129dacfc6152ace1759c69a3333">
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="8c7f77dd922657ebf88ad3a44ab7c406">
           <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
       </div>
     </div>
@@ -143,9 +144,10 @@
       <div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div>
       <div class="t">مدرسة النور النموذجية</div>
       
-      <a href="teacher-13.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" >1</span></a>
+      <a class="lang-top" href="en-teacher-7.html" aria-label="Language">EN</a>
+      <a href="teacher-13.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" hidden>0</span></a>
       
-      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="8fd4f129dacfc6152ace1759c69a3333">
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="8c7f77dd922657ebf88ad3a44ab7c406">
         <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
     </header>
     <main class="content">
@@ -154,7 +156,7 @@
         
       
       
-<div class="page-head"><div><h1>التقييم الشهري والنهائي</h1><p>قيّم الصف كامل بصفحة وحدة — بيوصل لولي الأمر إشعار وبيظهر بكشف العلامات.</p></div></div>
+<div class="page-head"><div><h1>التقييم الشهري والنهائي</h1><p>قيّم الصف كاملاً في صفحة واحدة — يصل إشعار إلى ولي الأمر ويظهر في كشف العلامات.</p></div></div>
 
 <div class="card"><form data-path="/teacher/evaluations" class="filters" method="get">
   <div class="field grow2"><label>الصف والمادة</label><select name="cs" onchange="this.form.requestSubmit()"><option value="1:1" selected>السابع - أ — الرياضيات</option><option value="2:1" >الثامن - أ — الرياضيات</option><option value="3:1" >التاسع - ب — الرياضيات</option></select></div>
@@ -163,7 +165,7 @@
     <option value="2026-09" >أيلول 2026</option><option value="2026-10" >تشرين الأول 2026</option><option value="2026-11" selected>تشرين الثاني 2026</option><option value="2026-12" >كانون الأول 2026</option><option value="2027-01" >كانون الثاني 2027</option><option value="2027-02" >شباط 2027</option><option value="2027-03" >آذار 2027</option><option value="2027-04" >نيسان 2027</option><option value="2027-05" >أيار 2027</option><option value="2027-06" >حزيران 2027</option><option value="2027-07" >تموز 2027</option><option value="2027-08" >آب 2027</option>
     </select></div>
 </form></div>
-<form method="post" class="card mt"><input type="hidden" name="_csrf" value="8fd4f129dacfc6152ace1759c69a3333"><input type="hidden" name="cs" value="1:1"><input type="hidden" name="kind" value="monthly"><input type="hidden" name="period" value="2026-11">
+<form method="post" class="card mt"><input type="hidden" name="_csrf" value="8c7f77dd922657ebf88ad3a44ab7c406"><input type="hidden" name="cs" value="1:1"><input type="hidden" name="kind" value="monthly"><input type="hidden" name="period" value="2026-11">
   <div class="table-wrap"><table class="ft evt"><thead><tr><th>الطالب</th><th>السلوك</th><th>المشاركة</th><th>الالتزام</th><th>ملاحظة لولي الأمر</th></tr></thead><tbody>
   <tr><td><b>آدم مازن الطراونة</b></td>
     <td><select name="behavior_20" aria-label="behavior"><option value="">—</option><option value="5" >★★★★★</option><option value="4" >★★★★</option><option value="3" >★★★</option><option value="2" >★★</option><option value="1" >★</option></select></td><td><select name="participation_20" aria-label="participation"><option value="">—</option><option value="5" >★★★★★</option><option value="4" >★★★★</option><option value="3" >★★★</option><option value="2" >★★</option><option value="1" >★</option></select></td><td><select name="commitment_20" aria-label="commitment"><option value="">—</option><option value="5" >★★★★★</option><option value="4" >★★★★</option><option value="3" >★★★</option><option value="2" >★★</option><option value="1" >★</option></select></td>
@@ -186,8 +188,8 @@
     
     <td><input name="comment_10" value="" placeholder="اختياري"></td></tr>
   </tbody></table></div>
-  <div class="row mt"><button class="btn">حفظ التقييمات</button><button type="button" class="btn ghost" onclick="document.querySelectorAll('.evt select[name^=behavior],.evt select[name^=participation],.evt select[name^=commitment]').forEach(function(s){if(!s.value)s.value='5'})">تعبئة ★★★★★ للفاضي</button>
-    <small class="muted">الطالب اللي ما إله تقييم كامل ما بينحفظ.</small></div>
+  <div class="row mt"><button class="btn">حفظ التقييمات</button><button type="button" class="btn ghost" onclick="document.querySelectorAll('.evt select[name^=behavior],.evt select[name^=participation],.evt select[name^=commitment]').forEach(function(s){if(!s.value)s.value='5'})">تعبئة ★★★★★ للحقول الفارغة</button>
+    <small class="muted">الطالب الذي لا يكتمل تقييمه لا يُحفظ.</small></div>
 </form>
 
 
@@ -214,7 +216,7 @@
       </a>
     
       <a href="teacher-8.html" class="">
-        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg><span>أونلاين</span>
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></svg><span>عبر الإنترنت</span>
         
         
       </a>
@@ -240,7 +242,7 @@
 </script>
 
 <div class="push-nudge" id="pushNudge" hidden>
-  <span>🔔 فعّل الإشعارات حتى يوصلك كل جديد على الجوال</span>
+  <span>🔔 فعّل الإشعارات ليصلك كل جديد على هاتفك</span>
   <a class="btn accent sm" href="teacher-13.html">تفعيل</a>
   <button class="linkbtn" id="nudgeX" aria-label="إخفاء">×</button>
 </div>
@@ -262,16 +264,16 @@
 
 <div class="demo-toast" id="demoToast" hidden></div>
 <script>
-(function(){var MAP={"/teacher/": "teacher-0.html", "/teacher/schedule": "teacher-1.html", "/teacher/homework": "teacher-2.html", "/attendance/take": "teacher-3.html", "/teacher/plans": "teacher-4.html", "/teacher/exams": "teacher-5.html", "/teacher/gradebook": "teacher-6.html", "/teacher/evaluations": "teacher-7.html", "/teacher/online": "teacher-8.html", "/teacher/meetings": "teacher-9.html", "/calendar": "teacher-10.html", "/honor": "teacher-11.html", "/messages": "teacher-12.html", "/notifications": "teacher-13.html", "/announcements": "teacher-14.html", "/account": "teacher-15.html", "/teacher/class/1": "teacher-16.html", "/teacher/class/2": "teacher-17.html", "/teacher/class/3": "teacher-18.html", "/teacher/homework/1": "teacher-19.html", "/teacher/homework/21": "teacher-20.html", "/teacher/homework/2": "teacher-21.html", "/teacher/plans?cs=1%3A1&week=2026-10-25": "teacher-22.html", "/teacher/plans?cs=1%3A1&week=2026-11-08": "teacher-23.html", "/teacher/plans?cs=3%3A1&week=2026-11-01": "teacher-24.html", "/teacher/plans?cs=2%3A1&week=2026-11-01": "teacher-25.html", "/teacher/plans?cs=1%3A1&week=2026-11-01": "teacher-26.html", "/teacher/exams/7": "teacher-27.html", "/teacher/exams/16": "teacher-28.html", "/teacher/exams/25": "teacher-29.html", "/teacher/exams?cs=1%3A1": "teacher-30.html", "/students/20?tab=exams": "teacher-31.html", "/students/17?tab=exams": "teacher-32.html", "/students/13?tab=exams": "teacher-33.html", "/students/15?tab=exams": "teacher-34.html", "/calendar?m=2026-10": "teacher-35.html", "/calendar?m=2026-12": "teacher-36.html", "/honor?period=week": "teacher-37.html", "/honor?period=month": "teacher-38.html", "/honor?period=year": "teacher-39.html", "/messages/9": "teacher-40.html", "/messages/2": "teacher-41.html", "/messages/23": "teacher-42.html", "/teacher/homework?cs=1%3A1": "teacher-43.html", "/students/20": "teacher-44.html", "/students/20?tab=evaluations": "teacher-45.html", "/students/17": "teacher-46.html", "/students/17?tab=evaluations": "teacher-47.html", "/students/13": "teacher-48.html", "/students/13?tab=evaluations": "teacher-49.html", "/students/15": "teacher-50.html", "/students/15?tab=evaluations": "teacher-51.html", "/messages/9?student=10": "teacher-52.html", "/teacher/homework?cs=2%3A1": "teacher-53.html", "/teacher/exams?cs=2%3A1": "teacher-54.html", "/messages/23?student=24": "teacher-55.html", "/teacher/homework?cs=3%3A1": "teacher-56.html", "/teacher/exams?cs=3%3A1": "teacher-57.html", "/messages/9?student=11": "teacher-58.html", "/teacher/plans?cs=1%3A1&week=2026-10-18": "teacher-59.html", "/teacher/plans?copy=1&cs=1%3A1&week=2026-10-25": "teacher-60.html", "/teacher/plans?cs=1%3A1&week=2026-11-15": "teacher-61.html", "/teacher/plans?copy=1&cs=1%3A1&week=2026-11-08": "teacher-62.html", "/teacher/plans?cs=3%3A1&week=2026-10-25": "teacher-63.html", "/teacher/plans?cs=3%3A1&week=2026-11-08": "teacher-64.html", "/teacher/plans?cs=2%3A1&week=2026-10-25": "teacher-65.html", "/teacher/plans?cs=2%3A1&week=2026-11-08": "teacher-66.html", "/students/20?tab=awards": "teacher-67.html", "/students/20?tab=overview": "teacher-68.html", "/students/20?tab=schedule": "teacher-69.html", "/students/20?tab=plan": "teacher-70.html", "/students/20?tab=homework": "teacher-71.html", "/students/20?tab=attendance": "teacher-72.html", "/students/20?tab=online": "teacher-73.html", "/students/20?tab=exams&term=1": "teacher-74.html", "/students/20?tab=exams&term=2": "teacher-75.html", "/students/20/report-card?term=1": "teacher-76.html", "/students/17?tab=awards": "teacher-77.html", "/students/17?tab=overview": "teacher-78.html", "/students/17?tab=schedule": "teacher-79.html", "/students/17?tab=plan": "teacher-80.html", "/students/17?tab=homework": "teacher-81.html", "/students/17?tab=attendance": "teacher-82.html", "/students/17?tab=online": "teacher-83.html", "/students/17?tab=exams&term=1": "teacher-84.html", "/students/17?tab=exams&term=2": "teacher-85.html", "/students/17/report-card?term=1": "teacher-86.html", "/students/13?tab=awards": "teacher-87.html", "/students/13?tab=overview": "teacher-88.html", "/students/13?tab=schedule": "teacher-89.html"};var t;
+(function(){var MAP={"/teacher/": "teacher-0.html", "/teacher/schedule": "teacher-1.html", "/teacher/homework": "teacher-2.html", "/attendance/take": "teacher-3.html", "/teacher/plans": "teacher-4.html", "/teacher/exams": "teacher-5.html", "/teacher/gradebook": "teacher-6.html", "/teacher/evaluations": "teacher-7.html", "/teacher/online": "teacher-8.html", "/teacher/meetings": "teacher-9.html", "/calendar": "teacher-10.html", "/honor": "teacher-11.html", "/messages": "teacher-12.html", "/notifications": "teacher-13.html", "/announcements": "teacher-14.html", "/account": "teacher-15.html", "/teacher/class/1": "teacher-16.html", "/teacher/class/2": "teacher-17.html", "/teacher/homework/1": "teacher-18.html", "/teacher/homework/21": "teacher-19.html", "/teacher/plans?cs=1%3A1&week=2026-10-25": "teacher-20.html", "/teacher/plans?cs=1%3A1&week=2026-11-08": "teacher-21.html", "/teacher/plans?cs=3%3A1&week=2026-11-01": "teacher-22.html", "/teacher/plans?cs=2%3A1&week=2026-11-01": "teacher-23.html", "/teacher/plans?cs=1%3A1&week=2026-11-01": "teacher-24.html", "/teacher/exams/7": "teacher-25.html", "/teacher/exams/16": "teacher-26.html", "/teacher/exams?cs=1%3A1": "teacher-27.html", "/students/20?tab=exams": "teacher-28.html", "/students/17?tab=exams": "teacher-29.html", "/calendar?m=2026-10": "teacher-30.html", "/calendar?m=2026-12": "teacher-31.html", "/honor?period=week": "teacher-32.html", "/honor?period=month": "teacher-33.html", "/honor?period=year": "teacher-34.html", "/messages/9": "teacher-35.html", "/messages/2": "teacher-36.html", "/teacher/homework?cs=1%3A1": "teacher-37.html", "/students/20": "teacher-38.html", "/students/20?tab=evaluations": "teacher-39.html", "/students/17": "teacher-40.html", "/students/17?tab=evaluations": "teacher-41.html", "/messages/9?student=10": "teacher-42.html", "/teacher/homework?cs=2%3A1": "teacher-43.html", "/teacher/exams?cs=2%3A1": "teacher-44.html", "/teacher/plans?cs=1%3A1&week=2026-10-18": "teacher-45.html", "/teacher/plans?copy=1&cs=1%3A1&week=2026-10-25": "teacher-46.html", "/teacher/plans?cs=1%3A1&week=2026-11-15": "teacher-47.html", "/teacher/plans?copy=1&cs=1%3A1&week=2026-11-08": "teacher-48.html", "/teacher/plans?cs=3%3A1&week=2026-10-25": "teacher-49.html", "/teacher/plans?cs=3%3A1&week=2026-11-08": "teacher-50.html", "/teacher/plans?cs=2%3A1&week=2026-10-25": "teacher-51.html"};var TX={"bar": "نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل", "switch": "تغيير الحساب", "filter": "هذا التصفية غير متاحة في نسخة العرض", "save": "الحفظ معطّل في نسخة العرض — ويتم فوراً في النسخة الكاملة ✓", "missing": "هذه الصفحة غير مضمّنة في نسخة العرض", "bad": "بيانات الدخول غير صحيحة. استخدم أحد الحسابات التجريبية.", "demo": "حسابات تجريبية", "pw": "كلمة المرور لجميع الحسابات", "code": "رمز المدرسة", "roles": {"admin": "الإدارة", "teacher": "معلم", "parent": "ولي أمر", "student": "طالب", "accountant": "المحاسب"}};var HOME="index.html";var t;
 function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
 function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
  var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
 document.addEventListener('submit',function(e){var f=e.target;e.preventDefault();
- if(f.dataset.logout){location.href='index.html';return;}
+ if(f.dataset.logout){location.href=HOME;return;}
  if(f.dataset.path){var p=new URLSearchParams();new FormData(f).forEach(function(v,k){p.append(k,v)});var k=norm(f.dataset.path,p);
-   if(MAP[k]){location.href=MAP[k];return;} toast('هالفلتر مش متاح بنسخة العرض');return;}
- toast('بنسخة العرض الحفظ معطّل — بالنسخة الكاملة بينحفظ فوراً ✓');});
-document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast('هالصفحة مش مضمّنة بنسخة العرض');}});
+   if(MAP[k]){location.href=MAP[k];return;} toast(TX.filter);return;}
+ toast(TX.save);});
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast(TX.missing);}});
 var end=document.getElementById('end');if(end)end.scrollIntoView();
 })();
 </script></body>

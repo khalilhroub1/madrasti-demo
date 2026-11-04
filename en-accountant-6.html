@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="csrf" content="25410fea6bea1da66ba98846c504cd79">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Expenses — مدرسة النور النموذجية</title>
+  
+  <link rel="icon" href="static/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="static/icon-32.png" sizes="32x32" type="image/png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noopener">
+  <link rel="preconnect" href="https://fonts.gstatic.com" target="_blank" rel="noopener" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600;700&display=swap" target="_blank" rel="noopener" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css?v=4">
+  
+</head>
+<body><div class="demo-bar">Demo version · navigation works, saving is disabled <a href="en-index.html">Switch account</a></div>
+
+<div class="navprog" id="navprog"></div>
+<div class="splash" id="splash" hidden><div class="sp-in"><img src="static/logo-mark.svg" alt=""><b>مدرسة النور النموذجية</b><div class="bar"></div></div></div>
+<script>try{if(!sessionStorage.getItem('sp')){document.getElementById('splash').hidden=false;sessionStorage.setItem('sp','1');}}catch(e){}</script>
+
+
+
+  
+  
+
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div><div><b>مدرسة النور النموذجية</b><span>Madrasati platform</span></div></div>
+    <nav class="nav">
+      
+        <a href="en-accountant-0.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg> Finance home
+          
+          
+        </a>
+      
+        <a href="en-accountant-1.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 010 6.8M18 14.8c2 .7 3.2 2.4 3.5 5.2"/></svg> Students and Fees
+          
+          
+        </a>
+      
+        <a href="en-accountant-5.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 11h6M9 15h4"/></svg> Billing and Installments
+          
+          
+        </a>
+      
+        <a href="en-accountant-6.html" class="on">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h10a4 4 0 014 4v12H8a4 4 0 01-4-4V4z"/><path d="M18 20H8a4 4 0 01-4-4"/></svg> Expenses
+          
+          
+        </a>
+      
+        <a href="en-accountant-7.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg> Journal Entries
+          
+          
+        </a>
+      
+        <a href="en-accountant-8.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> Reports
+          
+          
+        </a>
+      
+        <a href="en-accountant-9.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg> Notifications
+          
+          <span class="badge solid" data-count="unread" hidden>0</span>
+        </a>
+      
+        <a href="en-accountant-10.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v3a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1z"/><path d="M15 9a4 4 0 010 6M18 6a8 8 0 010 12"/></svg> Announcements
+          
+          
+        </a>
+      
+    </nav>
+    <div class="side-foot">
+      <div class="who"><div class="avatar sm ">را</div>
+        <div><b style="color:#fff">رامي المحاسب</b><br><span style="opacity:.7">Accountant</span></div></div>
+      <div class="row">
+        <a href="en-accountant-11.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
+        <a href="en-accountant-11.html">My account</a>
+        <a class="lang-mini" href="accountant-6.html" title="Language">ع</a>
+        <span class="spacer"></span>
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+          <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> Log out</button></form>
+      </div>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div>
+      <div class="t">مدرسة النور النموذجية</div>
+      
+      <a class="lang-top" href="accountant-6.html" aria-label="Language">ع</a>
+      <a href="en-accountant-9.html" aria-label="Notifications"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" hidden>0</span></a>
+      
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+        <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="Log out"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
+    </header>
+    <main class="content">
+      
+      
+        
+      
+      
+<div class="fin-top">
+  <div class="fin-groups">
+    
+      <a class="" href="en-accountant-0.html">Collections</a>
+    
+      <a class="" href="en-accountant-12.html">Staff and Transport</a>
+    
+      <a class="on" href="en-accountant-6.html">Expenses</a>
+    
+      <a class="" href="en-accountant-13.html">Accounting</a>
+    
+      <a class="" href="en-accountant-14.html">Reports</a>
+    
+      <a class="" href="en-accountant-15.html">Other</a>
+    
+  </div>
+  <form class="fin-year" method="post" action="/finance/year">
+    <input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79"><input type="hidden" name="next" value="/finance/expenses?">
+    <label for="fy" class="sr">Academic year</label>
+    <select id="fy" name="year_id" onchange="this.form.requestSubmit()">
+      <option value="4" >2028/2029</option><option value="3" >2027/2028</option><option value="2" selected>2026/2027 · current</option><option value="1" >2025/2026</option>
+    </select>
+  </form>
+</div>
+
+<nav class="fin-sub"><a class="on" href="en-accountant-6.html">Expenses</a><a class="" href="en-accountant-42.html">Suppliers</a><a class="" href="en-accountant-43.html">Canteen</a><a class="" href="en-accountant-24.html">Inventory</a></nav>
+
+
+<div class="page-head"><div><h1>Expenses</h1><p>35 entries · total 11,911.5 JOD · salaries, supplier payments and canteen are added here automatically</p></div>
+  <div class="row"><a class="btn ghost sm" target="_blank" href="#" data-missing="1">Print</a>
+<a class="btn ghost sm" href="#" data-missing="1">Excel</a><a class="btn" href="en-accountant-44.html">+ Expense</a></div></div>
+
+
+
+<div class="grid g2 mt" style="grid-template-columns:minmax(0,3fr) minmax(0,1fr)">
+  <form data-path="/finance/expenses" class="card filters" method="get">
+    <div class="field"><label>From date</label><input type="date" name="from" value=""></div>
+    <div class="field"><label>To date</label><input type="date" name="to" value=""></div>
+    <div class="field grow2"><label>Item</label><select name="cat"><option value="all">All items</option><option value="5" >Activities</option><option value="4" >Internet</option><option value="10" >Security and Protection</option><option value="11" >Salaries</option><option value="9" >Maintenance</option><option value="13" >Canteen</option><option value="1" >Setup</option><option value="7" >Staff salaries</option><option value="6" >Stationery</option><option value="2" >Electricity</option><option value="3" >Water</option><option value="12" >Supplier payments</option><option value="8" >مصاريف الباصات</option></select></div>
+    <div class="field"><label>&nbsp;</label><button class="btn ghost">Apply</button></div>
+  </form>
+  <form class="card row" method="post" style="align-items:flex-end"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79"><input type="hidden" name="action" value="category">
+    <div class="field grow2 mb0"><label>New item</label><input name="name" placeholder="Item name"></div><button class="btn ghost">+</button></form>
+</div>
+
+<div class="catgrid mt"><div class="catcell"><small>Activities</small><b>0</b></div><div class="catcell"><small>Internet</small><b>135</b></div><div class="catcell"><small>Security and Protection</small><b>0</b></div><div class="catcell"><small>Salaries</small><b>7,967.5</b></div><div class="catcell"><small>Maintenance</small><b>541</b></div><div class="catcell"><small>Canteen</small><b>240</b></div><div class="catcell"><small>Setup</small><b>0</b></div><div class="catcell"><small>Staff salaries</small><b>0</b></div><div class="catcell"><small>Stationery</small><b>0</b></div><div class="catcell"><small>Electricity</small><b>1,071</b></div><div class="catcell"><small>Water</small><b>307</b></div><div class="catcell"><small>Supplier payments</small><b>1,650</b></div><div class="catcell"><small>مصاريف الباصات</small><b>0</b></div></div>
+
+<div class="card mt">
+  <h2>Expenses log</h2>
+  <div class="table-wrap"><table class="ft"><thead><tr><th>Date</th><th>Item</th><th>Amount</th><th>Paid to</th><th>From</th><th>Invoice number</th><th>Attachment</th><th>Description</th><th></th></tr></thead><tbody>
+  
+    <tr><td>4/11/2026</td><td>Canteen</td><td class="warn"><b>50</b></td><td>ماء صغير</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">مشتريات مقصف: ماء صغير</td>
+      <td class="nowrap"><a class="btn ghost sm" href="en-accountant-45.html">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="35">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>4/11/2026</td><td>Canteen</td><td class="warn"><b>90</b></td><td>سندويشة زعتر</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">مشتريات مقصف: سندويشة زعتر</td>
+      <td class="nowrap"><a class="btn ghost sm" href="en-accountant-46.html">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="34">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>4/11/2026</td><td>Canteen</td><td class="warn"><b>100</b></td><td>عصير برتقال</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">مشتريات مقصف: عصير برتقال</td>
+      <td class="nowrap"><a class="btn ghost sm" href="en-accountant-47.html">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="33">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>4/11/2026</td><td>Maintenance</td><td class="warn"><b>172</b></td><td>ورشة الصيانة</td>
+      <td><span class="badge">Bank</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة الصيانة 11/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="30">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>4/11/2026</td><td>Internet</td><td class="warn"><b>45</b></td><td>أورنج</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة إنترنت 11/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="29">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>4/11/2026</td><td>Water</td><td class="warn"><b>99</b></td><td>مياهنا</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة ماء 11/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="28">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>4/11/2026</td><td>Electricity</td><td class="warn"><b>418</b></td><td>شركة الكهرباء الأردنية</td>
+      <td><span class="badge">Bank</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة كهرباء 11/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="27">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>350</b></td><td>محمود العتوم</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب سائق: محمود العتوم - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="18">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>350</b></td><td>أبو سامي الدعجة</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب سائق: أبو سامي الدعجة - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="17">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>277.5</b></td><td>أم أحمد (مستخدمة)</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: أم أحمد (مستخدمة) - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="16">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>462.5</b></td><td>هبة النسور</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: هبة النسور - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="15">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>508.75</b></td><td>يوسف الشرع</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: يوسف الشرع - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="14">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>555</b></td><td>خالد المومني</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: خالد المومني - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="13">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>555</b></td><td>رانيا حدّاد</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: رانيا حدّاد - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="12">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>416.25</b></td><td>منى الزعبي</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: منى الزعبي - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="11">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/10/2026</td><td>Salaries</td><td class="warn"><b>508.75</b></td><td>أحمد العبادي</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: أحمد العبادي - راتب 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="10">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>20/10/2026</td><td>Electricity</td><td class="warn"><b>286</b></td><td>شركة الكهرباء الأردنية</td>
+      <td><span class="badge">Bank</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة كهرباء 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="23">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>19/10/2026</td><td>Internet</td><td class="warn"><b>45</b></td><td>أورنج</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة إنترنت 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="25">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>14/10/2026</td><td>Maintenance</td><td class="warn"><b>237</b></td><td>ورشة الصيانة</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة الصيانة 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="26">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>5/10/2026</td><td>Water</td><td class="warn"><b>104</b></td><td>مياهنا</td>
+      <td><span class="badge">Bank</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة ماء 10/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="24">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>350</b></td><td>محمود العتوم</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب سائق: محمود العتوم - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="9">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>350</b></td><td>أبو سامي الدعجة</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب سائق: أبو سامي الدعجة - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="8">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>277.5</b></td><td>أم أحمد (مستخدمة)</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: أم أحمد (مستخدمة) - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="7">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>462.5</b></td><td>هبة النسور</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: هبة النسور - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="6">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>508.75</b></td><td>يوسف الشرع</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: يوسف الشرع - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="5">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>555</b></td><td>خالد المومني</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: خالد المومني - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="4">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>555</b></td><td>رانيا حدّاد</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: رانيا حدّاد - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="3">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>416.25</b></td><td>منى الزعبي</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: منى الزعبي - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="2">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>28/9/2026</td><td>Salaries</td><td class="warn"><b>508.75</b></td><td>أحمد العبادي</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">راتب موظف: أحمد العبادي - راتب 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="1">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>21/9/2026</td><td>Supplier payments</td><td class="warn"><b>570</b></td><td>مصنع الأمل للزي</td>
+      <td><span class="badge">Bank</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">دفعة مورد: مصنع الأمل للزي</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="32">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>21/9/2026</td><td>Supplier payments</td><td class="warn"><b>1,080</b></td><td>مكتبة الرسالة</td>
+      <td><span class="badge">Bank</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">دفعة مورد: مكتبة الرسالة</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="31">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>19/9/2026</td><td>Maintenance</td><td class="warn"><b>132</b></td><td>ورشة الصيانة</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة الصيانة 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="22">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>19/9/2026</td><td>Internet</td><td class="warn"><b>45</b></td><td>أورنج</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة إنترنت 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="21">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>18/9/2026</td><td>Water</td><td class="warn"><b>104</b></td><td>مياهنا</td>
+      <td><span class="badge">Cash</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة ماء 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="20">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+    <tr><td>6/9/2026</td><td>Electricity</td><td class="warn"><b>367</b></td><td>شركة الكهرباء الأردنية</td>
+      <td><span class="badge">Bank</span></td><td>—</td>
+      <td>—</td>
+      <td class="muted">فاتورة كهرباء 9/2026</td>
+      <td class="nowrap"><a class="btn ghost sm" href="#" data-missing="1">Edit</a><form method="post" action="/finance/expenses" class="inline" onsubmit="return confirm('Delete the expense and its entry?')"><input type="hidden" name="_csrf" value="25410fea6bea1da66ba98846c504cd79">
+<input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="19">
+<button class="btn danger sm">×</button></form></td></tr>
+  
+  </tbody></table></div>
+</div>
+
+
+    </main>
+  </div>
+  <nav class="bottom-nav">
+    
+      <a href="en-accountant-0.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg><span>Home</span>
+        
+        
+      </a>
+    
+      <a href="en-accountant-1.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 010 6.8M18 14.8c2 .7 3.2 2.4 3.5 5.2"/></svg><span>Students</span>
+        
+        
+      </a>
+    
+      <a href="en-accountant-6.html" class="on">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h10a4 4 0 014 4v12H8a4 4 0 01-4-4V4z"/><path d="M18 20H8a4 4 0 01-4-4"/></svg><span>Expenses</span>
+        
+        
+      </a>
+    
+      <a href="en-accountant-8.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Reports</span>
+        
+        
+      </a>
+    
+      <a href="en-accountant-11.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg><span>My account</span>
+        
+        
+      </a>
+    
+  </nav>
+</div>
+
+<script>
+  (function(){var sp=document.getElementById('splash');if(sp&&!sp.hidden){window.addEventListener('load',function(){setTimeout(function(){sp.classList.add('hide');setTimeout(function(){sp.remove()},400)},350)});}
+   var pg=document.getElementById('navprog');
+   document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||e.defaultPrevented||e.metaKey||e.ctrlKey||a.target==='_blank'||a.hasAttribute('download'))return;
+     var h=a.getAttribute('href');if(!h||h[0]==='#'||/^(mailto|tel|javascript):/.test(h)||a.origin!==location.origin)return;pg.classList.add('go');});
+   document.addEventListener('submit',function(e){var f=e.target;if(!f.target||f.target==='_self')setTimeout(function(){if(!e.defaultPrevented)pg.classList.add('go')},0);});
+   window.addEventListener('pageshow',function(){pg.classList.remove('go')});})();
+  if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js').catch(function(){}); }
+  var end = document.getElementById('end'); if (end) end.scrollIntoView();
+</script>
+
+<div class="push-nudge" id="pushNudge" hidden>
+  <span>🔔 Enable notifications to get every update on your phone</span>
+  <a class="btn accent sm" href="en-accountant-9.html">Enable</a>
+  <button class="linkbtn" id="nudgeX" aria-label="Hide">×</button>
+</div>
+<script>
+(function(){
+  // تحديث عدّادات الإشعارات والرسائل كل دقيقة
+  function tick(){ fetch('/api/notifications/summary',{credentials:'same-origin'}).then(function(r){return r.ok?r.json():null}).then(function(d){
+    if(!d) return; [['unread',d.unread],['messages',d.messages]].forEach(function(p){
+      document.querySelectorAll('[data-count="'+p[0]+'"]').forEach(function(el){ el.textContent=p[1]; el.hidden=!p[1]; }); });
+  }).catch(function(){}); }
+  setInterval(tick, 60000);
+  // تذكير بتفعيل إشعارات الجوال
+  var n=document.getElementById('pushNudge'), seen=false;
+  try{ seen=localStorage.getItem('nudge-off')==='1'; }catch(e){}
+  if(n && !seen && 'Notification' in window && Notification.permission==='default' && location.pathname!=='/notifications'){ n.hidden=false; }
+  document.getElementById('nudgeX') && (document.getElementById('nudgeX').onclick=function(){ n.hidden=true; try{localStorage.setItem('nudge-off','1')}catch(e){} });
+})();
+</script>
+
+<div class="demo-toast" id="demoToast" hidden></div>
+<script>
+(function(){var MAP={"/finance/": "en-accountant-0.html", "/finance/students": "en-accountant-1.html", "/finance/reports/analytics": "en-accountant-2.html", "/finance/journal?tab=trial": "en-accountant-3.html", "/finance/budget": "en-accountant-4.html", "/finance/billing": "en-accountant-5.html", "/finance/expenses": "en-accountant-6.html", "/finance/journal": "en-accountant-7.html", "/finance/reports/financial": "en-accountant-8.html", "/notifications": "en-accountant-9.html", "/announcements": "en-accountant-10.html", "/account": "en-accountant-11.html", "/finance/staff": "en-accountant-12.html", "/finance/accounts": "en-accountant-13.html", "/finance/reports/period": "en-accountant-14.html", "/finance/cards": "en-accountant-15.html", "/finance/inquiries": "en-accountant-16.html", "/finance/desk": "en-accountant-17.html", "/finance/payment-split": "en-accountant-18.html", "/finance/years": "en-accountant-19.html", "/finance/parents/new": "en-accountant-20.html", "/finance/reports/payments-detail": "en-accountant-21.html", "/finance/parents/5": "en-accountant-22.html", "/finance/parents/12": "en-accountant-23.html", "/finance/inventory": "en-accountant-24.html", "/finance/students/reports": "en-accountant-25.html", "/finance/reports/monthly-summary": "en-accountant-26.html", "/finance/reports/expenses-monthly": "en-accountant-27.html", "/finance/reports/monthly": "en-accountant-28.html", "/finance/reports/income-monthly": "en-accountant-29.html", "/finance/reports/expenses-detail": "en-accountant-30.html", "/finance/reports/contracts-detail": "en-accountant-31.html", "/finance/journal?from=2026-01-01&tab=entries&to=2026-11-04": "en-accountant-32.html", "/finance/journal?from=2026-01-01&tab=trial&to=2026-11-04": "en-accountant-33.html", "/finance/journal?from=2026-01-01&tab=new&to=2026-11-04": "en-accountant-34.html", "/finance/budget?new=1": "en-accountant-35.html", "/finance/budget?b=1": "en-accountant-36.html", "/finance/budget?b=1&edit=1": "en-accountant-37.html", "/finance/budget?b=1&edit_line=1": "en-accountant-38.html", "/finance/budget?b=1&edit_line=2": "en-accountant-39.html", "/finance/budget?b=1&edit_line=3": "en-accountant-40.html", "/finance/budget?b=1&edit_line=4": "en-accountant-41.html", "/finance/suppliers": "en-accountant-42.html", "/finance/canteen": "en-accountant-43.html", "/finance/expenses?new=1": "en-accountant-44.html", "/finance/expenses?edit=35": "en-accountant-45.html", "/finance/expenses?edit=34": "en-accountant-46.html", "/finance/expenses?edit=33": "en-accountant-47.html"};var TX={"bar": "Demo version · navigation works, saving is disabled", "switch": "Switch account", "filter": "This filter is not available in the demo", "save": "Saving is disabled in the demo — the full version saves instantly ✓", "missing": "This page is not included in the demo", "bad": "Incorrect login details. Use one of the demo accounts.", "demo": "Demo accounts", "pw": "Password for all accounts", "code": "School code", "roles": {"admin": "Administration", "teacher": "Teacher", "parent": "Parent", "student": "Student", "accountant": "Accountant"}};var HOME="en-index.html";var t;
+function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
+function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
+ var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
+document.addEventListener('submit',function(e){var f=e.target;e.preventDefault();
+ if(f.dataset.logout){location.href=HOME;return;}
+ if(f.dataset.path){var p=new URLSearchParams();new FormData(f).forEach(function(v,k){p.append(k,v)});var k=norm(f.dataset.path,p);
+   if(MAP[k]){location.href=MAP[k];return;} toast(TX.filter);return;}
+ toast(TX.save);});
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast(TX.missing);}});
+var end=document.getElementById('end');if(end)end.scrollIntoView();
+})();
+</script></body>
+</html>

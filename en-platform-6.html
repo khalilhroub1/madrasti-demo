@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="csrf" content="2573dfb418975feffc4ae732547c73c6">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Plans</title>
+  
+  <link rel="icon" href="static/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="static/icon-32.png" sizes="32x32" type="image/png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noopener">
+  <link rel="preconnect" href="https://fonts.gstatic.com" target="_blank" rel="noopener" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600;700&display=swap" target="_blank" rel="noopener" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css?v=4">
+  
+</head>
+<body><div class="demo-bar">Demo version · navigation works, saving is disabled <a href="en-owner.html">Switch account</a></div>
+
+<div class="navprog" id="navprog"></div>
+<div class="splash" id="splash" hidden><div class="sp-in"><img src="static/logo-mark.svg" alt=""><b>Madrasati</b><div class="bar"></div></div></div>
+<script>try{if(!sessionStorage.getItem('sp')){document.getElementById('splash').hidden=false;sessionStorage.setItem('sp','1');}}catch(e){}</script>
+
+
+
+  
+  
+
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div><div><b>Madrasati</b><span>Platform management</span></div></div>
+    <nav class="nav">
+      
+        <a href="en-platform-0.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/></svg> Schools
+          
+          
+        </a>
+      
+        <a href="en-platform-1.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg> Payments
+          
+          
+        </a>
+      
+        <a href="en-platform-2.html" class="on">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg> Plans
+          
+          
+        </a>
+      
+        <a href="en-platform-3.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg> Settings
+          
+          
+        </a>
+      
+    </nav>
+    <div class="side-foot">
+      <div class="who"><div class="avatar sm t4">صا</div>
+        <div><b style="color:#fff">Platform Owner</b><br><span style="opacity:.7">Platform Owner</span></div></div>
+      <div class="row">
+        <a href="en-platform-4.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
+        <a href="en-platform-4.html">My account</a>
+        <a class="lang-mini" href="platform-6.html" title="Language">ع</a>
+        <span class="spacer"></span>
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6">
+          <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> Log out</button></form>
+      </div>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div>
+      <div class="t">Madrasati</div>
+      
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6">
+        <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="Log out"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
+    </header>
+    <main class="content">
+      
+      
+        
+      
+      
+<div class="page-head"><div><h1>Subscription plans</h1><p>Price = base (monthly or yearly) + student price × school students × months. Put zero in any field you do not need.</p></div></div>
+
+<form class="card" method="post"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6"><input type="hidden" name="action" value="save"><input type="hidden" name="id" value="2">
+  <h2>Edit plan</h2>
+  <div class="form-grid g-auto">
+    <div class="field"><label>Plan name *</label><input name="name" required value="متقدمة" placeholder="Basic / Advanced"></div>
+    <div class="field"><label>Monthly base price (JOD)</label><input name="monthly_price" inputmode="decimal" value="40.0"></div>
+    <div class="field"><label>Yearly base price (JOD)</label><input name="yearly_price" inputmode="decimal" value="400.0"></div>
+    <div class="field"><label>Monthly price per student (JOD)</label><input name="per_student" inputmode="decimal" value="0.25"></div>
+    <div class="field"><label>Maximum students (0 = unlimited)</label><input name="max_students" inputmode="numeric" value="0"></div>
+    <div class="field"><label>Rank</label><input name="sort" inputmode="numeric" value="2"></div>
+  </div>
+  <div class="field"><label>Short description</label><input name="description" value="كل الميزات مع النظام المالي الكامل"></div>
+  <div class="row"><label class="check"><input type="checkbox" name="includes_finance" checked> Includes finance system</label>
+    <label class="check"><input type="checkbox" name="active" checked> Visible to schools</label></div>
+  <div class="row mt"><button class="btn">Save</button><a class="btn ghost" href="en-platform-2.html">Cancel</a></div>
+</form>
+<div class="card"><div class="table-wrap"><table><thead><tr><th>Plan</th><th>Monthly</th><th>Yearly</th><th>per student/month</th><th>Student limit</th><th>Finance</th><th>schools</th><th>Status</th><th></th></tr></thead><tbody>
+<tr><td><b>أساسية</b><br><small class="muted">التواصل والجداول والواجبات والإشعارات</small></td>
+  <td>25.00</td><td>250.00</td><td>0.00</td>
+  <td>300</td><td>—</td><td>0</td>
+  <td><span class="badge ok">Visible</span></td>
+  <td class="nowrap"><a class="btn ghost sm" href="en-platform-5.html">Edit</a>
+    <form method="post" class="inline" style="display:inline" onsubmit="return confirm('Delete the plan?')"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6"><input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="1"><button class="btn danger sm">×</button></form></td></tr>
+<tr><td><b>متقدمة</b><br><small class="muted">كل الميزات مع النظام المالي الكامل</small></td>
+  <td>40.00</td><td>400.00</td><td>0.25</td>
+  <td>Unlimited</td><td>✓</td><td>0</td>
+  <td><span class="badge ok">Visible</span></td>
+  <td class="nowrap"><a class="btn ghost sm" href="en-platform-6.html">Edit</a>
+    <form method="post" class="inline" style="display:inline" onsubmit="return confirm('Delete the plan?')"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6"><input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="2"><button class="btn danger sm">×</button></form></td></tr>
+
+</tbody></table></div></div>
+
+    </main>
+  </div>
+  <nav class="bottom-nav">
+    
+      <a href="en-platform-0.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/></svg><span>Schools</span>
+        
+        
+      </a>
+    
+      <a href="en-platform-1.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg><span>Payments</span>
+        
+        
+      </a>
+    
+      <a href="en-platform-2.html" class="on">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg><span>Plans</span>
+        
+        
+      </a>
+    
+      <a href="en-platform-3.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg><span>Settings</span>
+        
+        
+      </a>
+    
+      <a href="en-platform-4.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg><span>My account</span>
+        
+        
+      </a>
+    
+  </nav>
+</div>
+
+<script>
+  (function(){var sp=document.getElementById('splash');if(sp&&!sp.hidden){window.addEventListener('load',function(){setTimeout(function(){sp.classList.add('hide');setTimeout(function(){sp.remove()},400)},350)});}
+   var pg=document.getElementById('navprog');
+   document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||e.defaultPrevented||e.metaKey||e.ctrlKey||a.target==='_blank'||a.hasAttribute('download'))return;
+     var h=a.getAttribute('href');if(!h||h[0]==='#'||/^(mailto|tel|javascript):/.test(h)||a.origin!==location.origin)return;pg.classList.add('go');});
+   document.addEventListener('submit',function(e){var f=e.target;if(!f.target||f.target==='_self')setTimeout(function(){if(!e.defaultPrevented)pg.classList.add('go')},0);});
+   window.addEventListener('pageshow',function(){pg.classList.remove('go')});})();
+  if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js').catch(function(){}); }
+  var end = document.getElementById('end'); if (end) end.scrollIntoView();
+</script>
+
+<div class="demo-toast" id="demoToast" hidden></div>
+<script>
+(function(){var MAP={"/super/": "en-platform-0.html", "/super/payments": "en-platform-1.html", "/super/plans": "en-platform-2.html", "/super/settings": "en-platform-3.html", "/account": "en-platform-4.html", "/super/plans?edit=1": "en-platform-5.html", "/super/plans?edit=2": "en-platform-6.html"};var TX={"bar": "Demo version · navigation works, saving is disabled", "switch": "Switch account", "filter": "This filter is not available in the demo", "save": "Saving is disabled in the demo — the full version saves instantly ✓", "missing": "This page is not included in the demo", "bad": "Incorrect login details. Use one of the demo accounts.", "demo": "Demo accounts", "pw": "Password for all accounts", "code": "School code", "roles": {"admin": "Administration", "teacher": "Teacher", "parent": "Parent", "student": "Student", "accountant": "Accountant"}};var HOME="en-owner.html";var t;
+function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
+function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
+ var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
+document.addEventListener('submit',function(e){var f=e.target;e.preventDefault();
+ if(f.dataset.logout){location.href=HOME;return;}
+ if(f.dataset.path){var p=new URLSearchParams();new FormData(f).forEach(function(v,k){p.append(k,v)});var k=norm(f.dataset.path,p);
+   if(MAP[k]){location.href=MAP[k];return;} toast(TX.filter);return;}
+ toast(TX.save);});
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast(TX.missing);}});
+var end=document.getElementById('end');if(end)end.scrollIntoView();
+})();
+</script></body>
+</html>
