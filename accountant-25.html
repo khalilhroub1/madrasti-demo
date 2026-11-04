@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="csrf" content="07d717f6430973ed1ede023f35d9d79e">
+  <meta name="csrf" content="721c85e8106fa8c5cb2a0c48654ef1fc">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>المخزون — مدرسة النور النموذجية</title>
@@ -91,7 +91,7 @@
         <a href="accountant-11.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
         <a href="accountant-11.html">حسابي</a>
         <span class="spacer"></span>
-        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
           <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
       </div>
     </div>
@@ -103,7 +103,7 @@
       
       <a href="accountant-9.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" hidden>0</span></a>
       
-      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
         <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
     </header>
     <main class="content">
@@ -129,7 +129,7 @@
     
   </div>
   <form class="fin-year" method="post" action="/finance/year">
-    <input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="next" value="/finance/inventory?">
+    <input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="next" value="/finance/inventory?">
     <label for="fy" class="sr">السنة الدراسية</label>
     <select id="fy" name="year_id" onchange="this.form.requestSubmit()">
       <option value="4" >2028/2029</option><option value="3" >2027/2028</option><option value="2" selected>2026/2027 · الحالية</option><option value="1" >2025/2026</option>
@@ -147,7 +147,7 @@
   <div class="stat brand"><div class="n">162.5</div><div class="l">قيمة المخزون</div></div>
   <div class="stat sun"><div class="n">2</div><div class="l">أصناف تحت حد الطلب</div></div>
 </div>
-<form class="card mt" method="post"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="save">
+<form class="card mt" method="post"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="save">
   <h2>إضافة صنف للمخزون</h2>
   <div class="form-grid g-auto">
     <div class="field"><label>اسم الصنف *</label><input name="name" required></div>
@@ -163,34 +163,34 @@
 <div class="card mt"><h2>الأصناف</h2><div class="table-wrap"><table class="ft"><thead><tr><th>الصنف</th><th>الفئة</th><th>الكمية</th><th>الوحدة</th><th>سعر الوحدة</th><th>القيمة</th><th>حد الطلب</th><th>الحالة</th><th></th></tr></thead><tbody>
 
   <tr class="flag"><td><b>أقلام سبورة</b></td><td>قرطاسية</td>
-    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="2"><input name="quantity" value="18.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
+    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="2"><input name="quantity" value="18.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
     <td>قلم</td><td>0.75</td><td><b>13.5</b></td><td>30</td>
     <td><span class="badge warn">ناقص</span></td>
-    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="2">
 <button class="btn danger sm">×</button></form></td></tr>
 
   <tr class=""><td><b>دفاتر 40 ورقة</b></td><td>قرطاسية</td>
-    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="1"><input name="quantity" value="120.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
+    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="1"><input name="quantity" value="120.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
     <td>دفتر</td><td>0.4</td><td><b>48</b></td><td>50</td>
     <td><span class="badge ok">متوفر</span></td>
-    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="1">
 <button class="btn danger sm">×</button></form></td></tr>
 
   <tr class="flag"><td><b>معقم أرضيات</b></td><td>تنظيف</td>
-    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="4"><input name="quantity" value="6.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
+    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="4"><input name="quantity" value="6.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
     <td>عبوة</td><td>2.25</td><td><b>13.5</b></td><td>8</td>
     <td><span class="badge warn">ناقص</span></td>
-    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="4">
 <button class="btn danger sm">×</button></form></td></tr>
 
   <tr class=""><td><b>ورق A4</b></td><td>قرطاسية</td>
-    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="3"><input name="quantity" value="25.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
+    <td><form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="qty"><input type="hidden" name="id" value="3"><input name="quantity" value="25.0" inputmode="decimal" style="width:80px;min-height:32px" onchange="this.form.requestSubmit()" aria-label="الكمية"></form></td>
     <td>رزمة</td><td>3.5</td><td><b>87.5</b></td><td>10</td>
     <td><span class="badge ok">متوفر</span></td>
-    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+    <td><form method="post" action="/finance/inventory" class="inline" onsubmit="return confirm('متأكد من الحذف؟')"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="3">
 <button class="btn danger sm">×</button></form></td></tr>
 

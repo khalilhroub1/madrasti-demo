@@ -1,0 +1,62 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>شهادة تفوق — ليان محمد الحوراني</title>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Aref+Ruqaa:wght@700&display=swap" target="_blank" rel="noopener" rel="stylesheet">
+<style>
+@page { size: A4 landscape; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #eef2f1; font-family: "IBM Plex Sans Arabic", Tahoma, sans-serif; color: #1c2b2a; --c: #0a6e69; }
+.sheet { width: 297mm; height: 210mm; margin: 16px auto; background: #fff; position: relative; padding: 14mm; box-shadow: 0 10px 40px rgba(0,0,0,.12); overflow: hidden; }
+.frame { position: absolute; inset: 8mm; border: 3px solid var(--c); border-radius: 6px; }
+.frame::after { content: ""; position: absolute; inset: 4px; border: 1px solid color-mix(in srgb, var(--c) 45%, #fff); border-radius: 4px; }
+.corner { position: absolute; width: 70mm; height: 70mm; border-radius: 50%; background: color-mix(in srgb, var(--c) 9%, #fff); }
+.c1 { top: -30mm; right: -30mm; } .c2 { bottom: -34mm; left: -30mm; background: color-mix(in srgb, #d4a017 14%, #fff); }
+.in { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 6mm 16mm; }
+.head { display: flex; align-items: center; gap: 14px; }
+.head img { width: 26mm; height: 26mm; object-fit: contain; }
+.sname { font-family: "Reem Kufi", sans-serif; font-size: 22px; color: var(--c); } .sen { font-size: 12px; color: #6b7d7a; letter-spacing: 1px; }
+h1 { font-family: "Aref Ruqaa", "Reem Kufi", serif; font-size: 50px; margin: 6mm 0 2mm; color: #1c2b2a; }
+.rule { width: 60mm; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--c), #d4a017); margin-bottom: 6mm; }
+.lead { font-size: 18px; color: #4a5b59; }
+.who { font-family: "Reem Kufi", sans-serif; font-size: 36px; color: var(--c); margin: 3mm 0 1mm; }
+.cls { font-size: 15px; color: #6b7d7a; }
+.body { font-size: 18px; line-height: 1.9; max-width: 200mm; margin: 5mm auto 0; }
+.foot { margin-top: auto; width: 100%; display: flex; justify-content: space-between; align-items: flex-start; font-size: 14px; }
+.sig { width: 62mm; text-align: center; } .sig .ln { border-top: 1.5px solid #9aa9a6; margin-bottom: 4px; height: 14mm; }
+.seal { width: 30mm; height: 30mm; border-radius: 50%; border: 2px dashed var(--c); display: grid; place-items: center; color: var(--c); font-size: 11px; line-height: 1.4; transform: rotate(-10deg); }
+.meta { position: absolute; bottom: 11mm; left: 0; right: 0; text-align: center; font-size: 10px; color: #9aa9a6; z-index: 1; }
+.noprint { text-align: center; margin: 12px; } .noprint button { font: inherit; padding: 9px 22px; border: 0; border-radius: 10px; background: var(--c); color: #fff; cursor: pointer; }
+@media print { body { background: #fff; } .sheet { margin: 0; box-shadow: none; } .noprint { display: none; } }
+@media screen and (max-width: 1150px) { .sheet { transform-origin: top right; transform: scale(calc(100vw / 1150px)); } }
+</style></head><body><div class="demo-bar">نسخة عرض للتجربة · التنقل شغّال والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
+<div class="noprint"><button onclick="print()">طباعة الشهادة</button></div>
+<div class="sheet"><div class="corner c1"></div><div class="corner c2"></div><div class="frame"></div>
+  <div class="in">
+    <div class="head"><img src="static/logo-mark.svg" alt=""><div><div class="sname">مدرسة النور النموذجية</div><div class="sen">Al-Noor Model School</div></div></div>
+    <h1>شهادة تفوق</h1><div class="rule"></div>
+    <div class="lead">تتشرّف إدارة مدرسة النور النموذجية بمنح هذه الشهادة إلى الطالب/ة</div>
+    <div class="who">ليان محمد الحوراني</div>
+    <div class="cls">الصف: السابع - أ</div>
+    <div class="body">لتفوقها الدراسي وحصولها على نتائج متميزة، متمنين لها مزيداً من التقدم والنجاح.</div>
+    <div class="foot">
+      <div class="sig"><div class="ln"></div>المعلم/ة</div>
+      <div class="seal">ختم<br>المدرسة</div>
+      <div class="sig"><div class="ln"></div>مدير/ة المدرسة<br><small>أ. سميرة الخطيب</small></div>
+    </div>
+  </div>
+  <div class="meta">رقم الشهادة ALNOOR-0001 · تاريخ الإصدار 4/11/2026 · عمّان</div>
+</div>
+<div class="demo-toast" id="demoToast" hidden></div>
+<script>
+(function(){var MAP={"/students/10": "student-0.html", "/calendar": "student-1.html", "/honor": "student-2.html", "/notifications": "student-3.html", "/announcements": "student-4.html", "/account": "student-5.html", "/students/10?tab=overview": "student-6.html", "/students/10?tab=schedule": "student-7.html", "/students/10?tab=plan": "student-8.html", "/students/10?tab=homework": "student-9.html", "/students/10?tab=exams": "student-10.html", "/students/10?tab=attendance": "student-11.html", "/students/10?tab=evaluations": "student-12.html", "/students/10?tab=awards": "student-13.html", "/students/10?tab=online": "student-14.html", "/calendar?m=2026-10": "student-15.html", "/calendar?m=2026-12": "student-16.html", "/honor?period=week": "student-17.html", "/honor?period=month": "student-18.html", "/honor?period=year": "student-19.html", "/students/10?tab=plan&week=2026-10-25": "student-20.html", "/students/10?tab=plan&week=2026-11-08": "student-21.html", "/students/10?tab=exams&term=1": "student-22.html", "/students/10?tab=exams&term=2": "student-23.html", "/students/10/report-card?term=1": "student-24.html", "/certificates/1": "student-25.html", "/calendar?m=2026-09": "student-26.html", "/calendar?m=2026-11": "student-27.html", "/calendar?m=2027-01": "student-28.html", "/students/10?tab=plan&week=2026-10-18": "student-29.html"};var t;
+function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
+function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
+ var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
+document.addEventListener('submit',function(e){var f=e.target;e.preventDefault();
+ if(f.dataset.logout){location.href='index.html';return;}
+ if(f.dataset.path){var p=new URLSearchParams();new FormData(f).forEach(function(v,k){p.append(k,v)});var k=norm(f.dataset.path,p);
+   if(MAP[k]){location.href=MAP[k];return;} toast('هالفلتر مش متاح بنسخة العرض');return;}
+ toast('بنسخة العرض الحفظ معطّل — بالنسخة الكاملة بينحفظ فوراً ✓');});
+document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast('هالصفحة مش مضمّنة بنسخة العرض');}});
+var end=document.getElementById('end');if(end)end.scrollIntoView();
+})();
+</script></body></html>

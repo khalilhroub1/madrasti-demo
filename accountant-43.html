@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="csrf" content="07d717f6430973ed1ede023f35d9d79e">
+  <meta name="csrf" content="721c85e8106fa8c5cb2a0c48654ef1fc">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>الموردون — مدرسة النور النموذجية</title>
@@ -91,7 +91,7 @@
         <a href="accountant-11.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
         <a href="accountant-11.html">حسابي</a>
         <span class="spacer"></span>
-        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
           <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
       </div>
     </div>
@@ -103,7 +103,7 @@
       
       <a href="accountant-9.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" hidden>0</span></a>
       
-      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
         <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
     </header>
     <main class="content">
@@ -129,7 +129,7 @@
     
   </div>
   <form class="fin-year" method="post" action="/finance/year">
-    <input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="next" value="/finance/suppliers?">
+    <input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="next" value="/finance/suppliers?">
     <label for="fy" class="sr">السنة الدراسية</label>
     <select id="fy" name="year_id" onchange="this.form.requestSubmit()">
       <option value="4" >2028/2029</option><option value="3" >2027/2028</option><option value="2" selected>2026/2027 · الحالية</option><option value="1" >2025/2026</option>
@@ -141,7 +141,7 @@
 
 
 <div class="page-head"><div><h1>الشركات الموردة</h1><p>2 شركة · دفعات الموردين بتنضاف للمصروفات تلقائياً</p></div></div>
-<form class="card" method="post"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="save">
+<form class="card" method="post"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="save">
   <div class="form-grid g-auto"><div class="field"><label>الاسم</label><input name="name" required></div>
     <div class="field"><label>النوع (كتب/زي/...)</label><input name="type"></div>
     <div class="field"><label>الهاتف</label><input name="phone" dir="ltr"></div>
@@ -149,47 +149,47 @@
 <div class="grid g2 mt">
 
   <div class="card"><div class="card-head"><div><h3 class="mb0">مصنع الأمل للزي</h3><small class="muted">زي مدرسي · 065000000</small></div>
-    <form method="post" action="/finance/suppliers" class="inline" onsubmit="return confirm('حذف الشركة وفواتيرها ودفعاتها؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+    <form method="post" action="/finance/suppliers" class="inline" onsubmit="return confirm('حذف الشركة وفواتيرها ودفعاتها؟')"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="2">
 <button class="btn danger sm">حذف</button></form></div>
     <div class="minis three"><div class="mini info"><small>فواتير</small><b>950</b></div><div class="mini ok"><small>مدفوع</small><b>570</b></div>
       <div class="mini warn strong"><small>رصيد</small><b>380</b></div></div>
     <details class="sub"><summary>الفواتير (1)</summary>
-      <form method="post" enctype="multipart/form-data" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="invoice"><input type="hidden" name="supplier_id" value="2">
+      <form method="post" enctype="multipart/form-data" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="invoice"><input type="hidden" name="supplier_id" value="2">
         <div class="field"><label>رقم</label><input name="invoice_number"></div><div class="field"><label>مبلغ</label><input name="amount" inputmode="decimal" required></div>
         <div class="field"><label>تاريخ</label><input type="date" name="invoice_date" value="2026-11-04"></div><div class="field"><label>مرفق</label><input type="file" name="attachment" accept="image/*,application/pdf"></div>
         <div class="field"><label>&nbsp;</label><button class="btn sm">+</button></div></form>
       <ul class="list compact"><li><span class="grow">INV-848 · 6/9/2026</span><b>950</b>
-        <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_invoice"><input type="hidden" name="id" value="2"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
+        <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_invoice"><input type="hidden" name="id" value="2"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
     <details class="sub" open><summary>الدفعات (1)</summary>
-      <form method="post" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="pay"><input type="hidden" name="supplier_id" value="2">
+      <form method="post" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="pay"><input type="hidden" name="supplier_id" value="2">
         <div class="field"><label>مبلغ</label><input name="amount" inputmode="decimal" required></div><div class="field"><label>تاريخ</label><input type="date" name="payment_date" value="2026-11-04"></div>
         <div class="field"><label>الطريقة</label><select name="payment_method"><option value="cash">كاش</option><option value="bank">بنك</option><option value="visa">فيزا</option><option value="click">كليك</option></select></div>
         <div class="field"><label>&nbsp;</label><button class="btn sm">دفع</button></div></form>
       <ul class="list compact"><li><b class="pos">570</b><span class="grow muted">21/9/2026 · بنك</span>
-        <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_pay"><input type="hidden" name="id" value="2"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
+        <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_pay"><input type="hidden" name="id" value="2"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
   </div>
 
   <div class="card"><div class="card-head"><div><h3 class="mb0">مكتبة الرسالة</h3><small class="muted">كتب · 065000000</small></div>
-    <form method="post" action="/finance/suppliers" class="inline" onsubmit="return confirm('حذف الشركة وفواتيرها ودفعاتها؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+    <form method="post" action="/finance/suppliers" class="inline" onsubmit="return confirm('حذف الشركة وفواتيرها ودفعاتها؟')"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
 <input type="hidden" name="action" value="delete"><input type="hidden" name="id" value="1">
 <button class="btn danger sm">حذف</button></form></div>
     <div class="minis three"><div class="mini info"><small>فواتير</small><b>1,800</b></div><div class="mini ok"><small>مدفوع</small><b>1,080</b></div>
       <div class="mini warn strong"><small>رصيد</small><b>720</b></div></div>
     <details class="sub"><summary>الفواتير (1)</summary>
-      <form method="post" enctype="multipart/form-data" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="invoice"><input type="hidden" name="supplier_id" value="1">
+      <form method="post" enctype="multipart/form-data" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="invoice"><input type="hidden" name="supplier_id" value="1">
         <div class="field"><label>رقم</label><input name="invoice_number"></div><div class="field"><label>مبلغ</label><input name="amount" inputmode="decimal" required></div>
         <div class="field"><label>تاريخ</label><input type="date" name="invoice_date" value="2026-11-04"></div><div class="field"><label>مرفق</label><input type="file" name="attachment" accept="image/*,application/pdf"></div>
         <div class="field"><label>&nbsp;</label><button class="btn sm">+</button></div></form>
       <ul class="list compact"><li><span class="grow">INV-464 · 6/9/2026</span><b>1,800</b>
-        <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_invoice"><input type="hidden" name="id" value="1"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
+        <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_invoice"><input type="hidden" name="id" value="1"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
     <details class="sub" open><summary>الدفعات (1)</summary>
-      <form method="post" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="pay"><input type="hidden" name="supplier_id" value="1">
+      <form method="post" class="form-grid g-auto tight mt"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="pay"><input type="hidden" name="supplier_id" value="1">
         <div class="field"><label>مبلغ</label><input name="amount" inputmode="decimal" required></div><div class="field"><label>تاريخ</label><input type="date" name="payment_date" value="2026-11-04"></div>
         <div class="field"><label>الطريقة</label><select name="payment_method"><option value="cash">كاش</option><option value="bank">بنك</option><option value="visa">فيزا</option><option value="click">كليك</option></select></div>
         <div class="field"><label>&nbsp;</label><button class="btn sm">دفع</button></div></form>
       <ul class="list compact"><li><b class="pos">1,080</b><span class="grow muted">21/9/2026 · بنك</span>
-        <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_pay"><input type="hidden" name="id" value="1"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
+        <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_pay"><input type="hidden" name="id" value="1"><button class="linkbtn neg" aria-label="حذف">×</button></form></li></ul></details>
   </div>
 
 </div>

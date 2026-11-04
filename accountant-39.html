@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="csrf" content="07d717f6430973ed1ede023f35d9d79e">
+  <meta name="csrf" content="721c85e8106fa8c5cb2a0c48654ef1fc">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>الميزانية — مدرسة النور النموذجية</title>
@@ -91,7 +91,7 @@
         <a href="accountant-11.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
         <a href="accountant-11.html">حسابي</a>
         <span class="spacer"></span>
-        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
           <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
       </div>
     </div>
@@ -103,7 +103,7 @@
       
       <a href="accountant-9.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" hidden>0</span></a>
       
-      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
         <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
     </header>
     <main class="content">
@@ -129,7 +129,7 @@
     
   </div>
   <form class="fin-year" method="post" action="/finance/year">
-    <input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="next" value="/finance/budget?b=1&amp;edit_line=1">
+    <input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="next" value="/finance/budget?b=1&amp;edit_line=1">
     <label for="fy" class="sr">السنة الدراسية</label>
     <select id="fy" name="year_id" onchange="this.form.requestSubmit()">
       <option value="4" >2028/2029</option><option value="3" >2027/2028</option><option value="2" selected>2026/2027 · الحالية</option><option value="1" >2025/2026</option>
@@ -153,8 +153,8 @@
 
 <div class="card mt"><div class="card-head"><div><h2 class="mb0">الميزانية التشغيلية</h2><small class="muted">1/9/2026 — 31/8/2027 · معتمدة</small></div>
   <div class="row"><a class="btn ghost sm" href="accountant-38.html">تعديل</a>
-    <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="duplicate"><input type="hidden" name="id" value="1"><button class="btn ghost sm">نسخ للسنة التالية</button></form>
-    <form method="post" action="/finance/budget" class="inline" onsubmit="return confirm('حذف الميزانية وكل بنودها؟')"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e">
+    <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="duplicate"><input type="hidden" name="id" value="1"><button class="btn ghost sm">نسخ للسنة التالية</button></form>
+    <form method="post" action="/finance/budget" class="inline" onsubmit="return confirm('حذف الميزانية وكل بنودها؟')"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc">
 <input type="hidden" name="action" value="del_budget"><input type="hidden" name="id" value="1">
 <button class="btn danger sm">حذف</button></form></div></div>
   <div class="grid g4">
@@ -166,7 +166,7 @@
 </div>
 
 
-<form class="card mt" method="post"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="save_line"><input type="hidden" name="budget_id" value="1"><input type="hidden" name="id" value="1">
+<form class="card mt" method="post"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="save_line"><input type="hidden" name="budget_id" value="1"><input type="hidden" name="id" value="1">
   <h2>تعديل بند</h2>
   <div class="form-grid g-auto">
     <div class="field"><label>النوع</label><select name="kind"><option value="expense">مصروف</option><option value="revenue" selected>إيراد</option></select></div>
@@ -182,7 +182,7 @@
   <td class="neg">20,197.3</td>
   <td><div class="bar"><span style="width:8.2%"></span></div><small>8.2%</small></td>
   <td class="nowrap"><a class="btn ghost sm" href="accountant-39.html">تعديل</a>
-    <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="1"><button class="btn danger sm">×</button></form></td></tr>
+    <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="1"><button class="btn danger sm">×</button></form></td></tr>
 
 </tbody></table></div></div>
 
@@ -191,17 +191,17 @@
   <td class="pos">24,032.5</td>
   <td><div class="bar"><span style="width:24.9%"></span></div><small>24.9%</small></td>
   <td class="nowrap"><a class="btn ghost sm" href="accountant-40.html">تعديل</a>
-    <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="2"><button class="btn danger sm">×</button></form></td></tr>
+    <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="2"><button class="btn danger sm">×</button></form></td></tr>
 <tr><td>5201 - كهرباء</td><td>4,200</td><td class="strong">1,071</td>
   <td class="pos">3,129</td>
   <td><div class="bar"><span style="width:25.5%"></span></div><small>25.5%</small></td>
   <td class="nowrap"><a class="btn ghost sm" href="accountant-41.html">تعديل</a>
-    <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="3"><button class="btn danger sm">×</button></form></td></tr>
+    <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="3"><button class="btn danger sm">×</button></form></td></tr>
 <tr><td>5204 - صيانة</td><td>1,500</td><td class="strong">541</td>
   <td class="pos">959</td>
   <td><div class="bar"><span style="width:36.1%"></span></div><small>36.1%</small></td>
   <td class="nowrap"><a class="btn ghost sm" href="accountant-42.html">تعديل</a>
-    <form method="post" class="inline"><input type="hidden" name="_csrf" value="07d717f6430973ed1ede023f35d9d79e"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="4"><button class="btn danger sm">×</button></form></td></tr>
+    <form method="post" class="inline"><input type="hidden" name="_csrf" value="721c85e8106fa8c5cb2a0c48654ef1fc"><input type="hidden" name="action" value="del_line"><input type="hidden" name="id" value="4"><button class="btn danger sm">×</button></form></td></tr>
 
 </tbody></table></div></div>
 
