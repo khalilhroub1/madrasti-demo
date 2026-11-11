@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
-  <meta name="csrf" content="2573dfb418975feffc4ae732547c73c6">
+  <meta name="csrf" content="771633583f1c2eb05a1c59be9d3625d2">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Schools</title>
@@ -68,7 +68,7 @@
         <a href="en-platform-4.html">My account</a>
         <a class="lang-mini" href="platform-0.html" title="Language">ع</a>
         <span class="spacer"></span>
-        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6">
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="771633583f1c2eb05a1c59be9d3625d2">
           <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> Log out</button></form>
       </div>
     </div>
@@ -78,7 +78,7 @@
       <div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div>
       <div class="t">Madrasati</div>
       
-      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6">
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="771633583f1c2eb05a1c59be9d3625d2">
         <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="Log out"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
     </header>
     <main class="content">
@@ -99,7 +99,7 @@
 <div class="card mt">
   <details class="add" >
     <summary class="btn"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Add a new school</summary>
-    <form method="post" action="/super/schools"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6">
+    <form method="post" action="/super/schools"><input type="hidden" name="_csrf" value="771633583f1c2eb05a1c59be9d3625d2">
       <div class="form-grid">
         <div class="field"><label>School name</label><input name="name" required></div>
         <div class="field"><label>Login code (English)</label><input name="code" required dir="ltr" placeholder="alnoor" pattern="[a-z0-9\-]{3,30}"></div>
@@ -122,17 +122,17 @@
         <td class="num">15</td><td class="num">6</td><td class="num">12</td>
         
         <td><span class="badge info">Trial period</span>
-          <br><small class="muted">No plan · until25/11/2026</small>
+          <br><small class="muted">No plan · until2/12/2026</small>
           <details class="sub"><summary>Edit</summary>
-            <form method="post" action="/super/schools/1/subscription" class="row mt"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6"><input type="hidden" name="action" value="extend">
+            <form method="post" action="/super/schools/1/subscription" class="row mt"><input type="hidden" name="_csrf" value="771633583f1c2eb05a1c59be9d3625d2"><input type="hidden" name="action" value="extend">
               <select name="months" aria-label="Duration"><option value="1">Month</option><option value="3">3 months</option><option value="12">Year</option></select><button class="btn ghost sm">Extend</button></form>
-            <form method="post" action="/super/schools/1/subscription" class="mt"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6"><input type="hidden" name="action" value="set">
+            <form method="post" action="/super/schools/1/subscription" class="mt"><input type="hidden" name="_csrf" value="771633583f1c2eb05a1c59be9d3625d2"><input type="hidden" name="action" value="set">
               <div class="row"><select name="plan_id" aria-label="Plan"><option value="">No plan</option><option value="1" >أساسية</option><option value="2" >متقدمة</option></select>
               <select name="status" aria-label="Status"><option value="active" >Active</option><option value="trial" selected>Trial</option><option value="free" >Permanently free</option></select>
-              <input type="date" name="until" value="2026-11-25" aria-label="Until"><button class="btn ghost sm">Save</button></div></form>
+              <input type="date" name="until" value="2026-12-02" aria-label="Until"><button class="btn ghost sm">Save</button></div></form>
           </details></td>
         <td><span class="badge ok">Active</span></td>
-        <td><form method="post" action="/super/schools/1/toggle"><input type="hidden" name="_csrf" value="2573dfb418975feffc4ae732547c73c6">
+        <td><form method="post" action="/super/schools/1/toggle"><input type="hidden" name="_csrf" value="771633583f1c2eb05a1c59be9d3625d2">
           <button class="btn ghost sm">Suspend</button></form></td></tr>
     
     </tbody>

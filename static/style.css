@@ -620,6 +620,19 @@ html[dir="ltr"] body { font-family: "IBM Plex Sans Arabic", "Segoe UI", system-u
 /* عناصر الشبكة لا تتجاوز عرض الشاشة */
 .grid > * { min-width: 0; }
 
+/* القوائم المالية */
+.ft.stmt tr.grp td { font-weight: 700; background: var(--surface-2, rgba(10,110,105,.05)); }
+
+/* الجولات */
+.pick-list { display: grid; gap: 6px; max-height: 320px; overflow: auto; padding: 4px; border: 1px solid var(--line); border-radius: 12px; }
+.pick-list .check { align-items: flex-start; }
+.bus-st { display: flex; gap: 8px; flex-wrap: wrap; }
+.bus-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.bus-row:last-child { border-bottom: 0; }
+.bus-row .grow { min-width: 160px; }
+.ft.stmt td:nth-child(2), .ft.stmt th:nth-child(2) { text-align: start; }
+.ft.stmt td:nth-child(3) { font-variant-numeric: tabular-nums; }
+
 .demo-hint{margin-top:14px;font-size:.86rem;color:var(--muted)}
 .demo-hint summary{cursor:pointer;font-weight:600;color:var(--brand)}
 .demo-hint div{margin-top:8px;line-height:1.9}

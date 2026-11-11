@@ -1,53 +1,348 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>شهادة تفوق — ليان محمد الحوراني</title>
-<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Aref+Ruqaa:wght@700&display=swap" target="_blank" rel="noopener" rel="stylesheet">
-<style>
-@page { size: A4 landscape; margin: 0; }
-* { box-sizing: border-box; }
-body { margin: 0; background: #eef2f1; font-family: "IBM Plex Sans Arabic", Tahoma, sans-serif; color: #1c2b2a; --c: #0a6e69; }
-.sheet { width: 297mm; height: 210mm; margin: 16px auto; background: #fff; position: relative; padding: 14mm; box-shadow: 0 10px 40px rgba(0,0,0,.12); overflow: hidden; }
-.frame { position: absolute; inset: 8mm; border: 3px solid var(--c); border-radius: 6px; }
-.frame::after { content: ""; position: absolute; inset: 4px; border: 1px solid color-mix(in srgb, var(--c) 45%, #fff); border-radius: 4px; }
-.corner { position: absolute; width: 70mm; height: 70mm; border-radius: 50%; background: color-mix(in srgb, var(--c) 9%, #fff); }
-.c1 { top: -30mm; right: -30mm; } .c2 { bottom: -34mm; left: -30mm; background: color-mix(in srgb, #d4a017 14%, #fff); }
-.in { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 6mm 16mm; }
-.head { display: flex; align-items: center; gap: 14px; }
-.head img { width: 26mm; height: 26mm; object-fit: contain; }
-.sname { font-family: "Reem Kufi", sans-serif; font-size: 22px; color: var(--c); } .sen { font-size: 12px; color: #6b7d7a; letter-spacing: 1px; }
-h1 { font-family: "Aref Ruqaa", "Reem Kufi", serif; font-size: 50px; margin: 6mm 0 2mm; color: #1c2b2a; }
-.rule { width: 60mm; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--c), #d4a017); margin-bottom: 6mm; }
-.lead { font-size: 18px; color: #4a5b59; }
-.who { font-family: "Reem Kufi", sans-serif; font-size: 36px; color: var(--c); margin: 3mm 0 1mm; }
-.cls { font-size: 15px; color: #6b7d7a; }
-.body { font-size: 18px; line-height: 1.9; max-width: 200mm; margin: 5mm auto 0; }
-.foot { margin-top: auto; width: 100%; display: flex; justify-content: space-between; align-items: flex-start; font-size: 14px; }
-.sig { width: 62mm; text-align: center; } .sig .ln { border-top: 1.5px solid #9aa9a6; margin-bottom: 4px; height: 14mm; }
-.seal { width: 30mm; height: 30mm; border-radius: 50%; border: 2px dashed var(--c); display: grid; place-items: center; color: var(--c); font-size: 11px; line-height: 1.4; transform: rotate(-10deg); }
-.meta { position: absolute; bottom: 11mm; left: 0; right: 0; text-align: center; font-size: 10px; color: #9aa9a6; z-index: 1; }
-.noprint { text-align: center; margin: 12px; } .noprint button { font: inherit; padding: 9px 22px; border: 0; border-radius: 10px; background: var(--c); color: #fff; cursor: pointer; }
-@media print { body { background: #fff; } .sheet { margin: 0; box-shadow: none; } .noprint { display: none; } }
-@media screen and (max-width: 1150px) { .sheet { transform-origin: top right; transform: scale(calc(100vw / 1150px)); } }
-</style></head><body><div class="demo-bar">نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
-<div class="noprint"><button onclick="print()">طباعة الشهادة</button></div>
-<div class="sheet"><div class="corner c1"></div><div class="corner c2"></div><div class="frame"></div>
-  <div class="in">
-    <div class="head"><img src="static/logo-mark.svg" alt=""><div><div class="sname">مدرسة النور النموذجية</div><div class="sen">Al-Noor Model School</div></div></div>
-    <h1>شهادة تفوق</h1><div class="rule"></div>
-    <div class="lead">تتشرّف إدارة مدرسة النور النموذجية بمنح هذه الشهادة إلى الطالب/ة</div>
-    <div class="who">ليان محمد الحوراني</div>
-    <div class="cls">الصف: السابع - أ</div>
-    <div class="body">لتفوقها الدراسي وحصولها على نتائج متميزة، متمنين لها مزيداً من التقدم والنجاح.</div>
-    <div class="foot">
-      <div class="sig"><div class="ln"></div>المعلم/ة</div>
-      <div class="seal">ختم<br>المدرسة</div>
-      <div class="sig"><div class="ln"></div>مدير/ة المدرسة<br><small>أ. سميرة الخطيب</small></div>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="csrf" content="b1a6e413aad1632ca92dbe87cd0e6dbe">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>المعلمون — مدرسة النور النموذجية</title>
+  
+  <link rel="icon" href="static/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="static/icon-32.png" sizes="32x32" type="image/png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" target="_blank" rel="noopener">
+  <link rel="preconnect" href="https://fonts.gstatic.com" target="_blank" rel="noopener" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600;700&display=swap" target="_blank" rel="noopener" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css?v=4">
+  
+</head>
+<body><div class="demo-bar">نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل <a href="index.html">تغيير الحساب</a></div>
+
+<div class="navprog" id="navprog"></div>
+<div class="splash" id="splash" hidden><div class="sp-in"><img src="static/logo-mark.svg" alt=""><b>مدرسة النور النموذجية</b><div class="bar"></div></div></div>
+<script>try{if(!sessionStorage.getItem('sp')){document.getElementById('splash').hidden=false;sessionStorage.setItem('sp','1');}}catch(e){}</script>
+
+
+
+  
+  
+
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="logo"><div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div><div><b>مدرسة النور النموذجية</b><span>منصة مدرستي</span></div></div>
+    <nav class="nav">
+      
+        <a href="admin-0.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg> لوحة التحكم
+          
+          
+        </a>
+      
+        <a href="admin-8.html" class="on">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 010 6.8M18 14.8c2 .7 3.2 2.4 3.5 5.2"/></svg> المستخدمون
+          
+          
+        </a>
+      
+        <a href="admin-9.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg> الصفوف والمواد
+          
+          
+        </a>
+      
+        <a href="admin-10.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> جدول الحصص
+          
+          
+        </a>
+      
+        <a href="admin-11.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg> المتابعة الأكاديمية
+          
+          
+        </a>
+      
+        <a href="admin-12.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg> الحضور والإجازات
+          
+          
+        </a>
+      
+        <a href="admin-3.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M8 21v-2M16 21v-2"/><circle cx="8" cy="14" r="1"/><circle cx="16" cy="14" r="1"/></svg> الحافلات
+          
+          
+        </a>
+      
+        <a href="admin-13.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 11h6M9 15h4"/></svg> دفتر العلامات
+          
+          
+        </a>
+      
+        <a href="admin-14.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.8L7 22l5-3 5 3-1.5-8.2"/></svg> الشهادات
+          
+          
+        </a>
+      
+        <a href="admin-15.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg> التقويم
+          
+          
+        </a>
+      
+        <a href="admin-16.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1 6.2L12 17.4 6.5 20.3l1-6.2L3 9.7l6.2-.9L12 3z"/></svg> لوحة الشرف
+          
+          
+        </a>
+      
+        <a href="admin-17.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg> المالية
+          
+          
+        </a>
+      
+        <a href="admin-18.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg> مراقبة الرسائل
+          
+          
+        </a>
+      
+        <a href="admin-19.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1.1-4.6A8 8 0 1121 12z"/></svg> رسائلي
+          <span class="badge solid" data-count="messages" >1</span>
+          
+        </a>
+      
+        <a href="admin-20.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg> الإشعارات
+          
+          <span class="badge solid" data-count="unread" >1</span>
+        </a>
+      
+        <a href="admin-21.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v3a1 1 0 001 1h2l5 4V6L6 10H4a1 1 0 00-1 1z"/><path d="M15 9a4 4 0 010 6M18 6a8 8 0 010 12"/></svg> الإعلانات
+          
+          
+        </a>
+      
+        <a href="admin-22.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/></svg> هوية المدرسة
+          
+          
+        </a>
+      
+        <a href="admin-23.html" class="">
+          <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6.5 15h4"/></svg> الاشتراك
+          
+          
+        </a>
+      
+    </nav>
+    <div class="side-foot">
+      <div class="who"><div class="avatar sm t3">سا</div>
+        <div><b style="color:#fff">أ. سميرة الخطيب</b><br><span style="opacity:.7">الإدارة</span></div></div>
+      <div class="row">
+        <a href="admin-24.html"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3"/></svg></a>
+        <a href="admin-24.html">حسابي</a>
+        <a class="lang-mini" href="en-admin-46.html" title="Language">EN</a>
+        <span class="spacer"></span>
+        <form data-logout="1" method="post"><input type="hidden" name="_csrf" value="b1a6e413aad1632ca92dbe87cd0e6dbe">
+          <button class="linkbtn row" style="gap:6px"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg> خروج</button></form>
+      </div>
     </div>
-  </div>
-  <div class="meta">رقم الشهادة ALNOOR-0001 · تاريخ الإصدار 4/11/2026 · عمّان</div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="brand-mark"><img class="" src="static/logo-mark.svg" alt=""></div>
+      <div class="t">مدرسة النور النموذجية</div>
+      
+      <a class="lang-top" href="en-admin-46.html" aria-label="Language">EN</a>
+      <a href="admin-20.html" aria-label="الإشعارات"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 1112 0v5l2 2H4l2-2z"/><path d="M10 21h4"/></svg><span class="badge solid" data-count="unread" >1</span></a>
+      
+      <form data-logout="1" method="post" style="margin:0"><input type="hidden" name="_csrf" value="b1a6e413aad1632ca92dbe87cd0e6dbe">
+        <button class="linkbtn" style="width:36px;height:36px;display:grid;place-items:center" aria-label="خروج"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h11"/></svg></button></form>
+    </header>
+    <main class="content">
+      
+      
+        
+      
+      
+<div class="page-head"><div><h1>المستخدمون</h1><p>لكل شخص حساب خاص به، ولا يرى إلا ما يخصه.</p></div>
+  <a class="btn ghost" href="admin-45.html">📥 استيراد من Excel</a></div>
+
+<div class="row" style="margin-bottom:16px">
+  <div class="seg"><a class="" href="admin-25.html">الطلاب</a><a class="on" href="admin-46.html">المعلمون</a><a class="" href="admin-47.html">أولياء الأمور</a><a class="" href="admin-48.html">الإداريون</a><a class="" href="admin-49.html">المحاسبون</a></div>
 </div>
+
+<div class="card">
+  <details class="add">
+    <summary class="btn"><svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> إضافة معلم</summary>
+    <form method="post" action="/admin/users"><input type="hidden" name="_csrf" value="b1a6e413aad1632ca92dbe87cd0e6dbe">
+      <input type="hidden" name="role" value="teacher">
+      <div class="form-grid">
+        <div class="field"><label>الاسم الكامل</label><input name="full_name" required></div>
+        <div class="field"><label>اسم المستخدم (للدخول)</label><input name="username" required dir="ltr"></div>
+        <div class="field"><label>كلمة المرور الأولية</label><input name="password" required minlength="6" dir="ltr"></div>
+        <div class="field"><label>رقم الهاتف</label><input name="phone" dir="ltr" inputmode="tel"></div>
+        
+        <div class="field"><label>البريد الإلكتروني</label><input name="email" type="email" dir="ltr"></div>
+        
+      </div>
+      <button class="btn">حفظ</button>
+    </form>
+  </details>
+</div>
+
+<div class="card">
+  <form data-path="/admin/users" class="row" method="get" style="margin-bottom:12px">
+    <input type="hidden" name="role" value="teacher">
+    <input name="q" value="" placeholder="بحث بالاسم أو الهاتف…" style="flex:1;min-width:180px">
+    
+    <button class="btn ghost">بحث</button>
+  </form>
+  <div class="table-wrap"><table>
+    <thead><tr><th>الاسم</th><th>اسم المستخدم</th>
+      <th>المواد</th>
+      <th class="hide-sm">الهاتف</th><th>الحالة</th><th></th></tr></thead>
+    <tbody>
+    
+      <tr><td><div class="row" style="gap:8px;flex-wrap:nowrap"><div class="avatar sm t3">أا</div><b>أحمد العبادي</b></div></td>
+        <td dir="ltr" class="right">ahmad</td>
+        <td><small>الرياضيات — السابع - أ، الرياضيات — الثامن - أ، الرياضيات — التاسع - ب</small></td>
+        
+        <td class="hide-sm" dir="ltr">0791111111</td>
+        <td><span class="badge ok">فعّال</span></td>
+        <td class="nowrap">
+          <a class="btn ghost sm" href="#" data-missing="1">تعديل</a></td></tr>
+    
+      <tr><td><div class="row" style="gap:8px;flex-wrap:nowrap"><div class="avatar sm t4">خا</div><b>خالد المومني</b></div></td>
+        <td dir="ltr" class="right">khaled</td>
+        <td><small>العلوم — السابع - أ، العلوم — الثامن - أ، العلوم — التاسع - ب</small></td>
+        
+        <td class="hide-sm" dir="ltr">0794444444</td>
+        <td><span class="badge ok">فعّال</span></td>
+        <td class="nowrap">
+          <a class="btn ghost sm" href="#" data-missing="1">تعديل</a></td></tr>
+    
+      <tr><td><div class="row" style="gap:8px;flex-wrap:nowrap"><div class="avatar sm t2">رح</div><b>رانيا حدّاد</b></div></td>
+        <td dir="ltr" class="right">rania</td>
+        <td><small>اللغة الإنجليزية — السابع - أ، اللغة الإنجليزية — الثامن - أ، اللغة الإنجليزية — التاسع - ب</small></td>
+        
+        <td class="hide-sm" dir="ltr">0793333333</td>
+        <td><span class="badge ok">فعّال</span></td>
+        <td class="nowrap">
+          <a class="btn ghost sm" href="#" data-missing="1">تعديل</a></td></tr>
+    
+      <tr><td><div class="row" style="gap:8px;flex-wrap:nowrap"><div class="avatar sm t1">ما</div><b>منى الزعبي</b></div></td>
+        <td dir="ltr" class="right">mona</td>
+        <td><small>اللغة العربية — السابع - أ، اللغة العربية — الثامن - أ، اللغة العربية — التاسع - ب</small></td>
+        
+        <td class="hide-sm" dir="ltr">0792222222</td>
+        <td><span class="badge ok">فعّال</span></td>
+        <td class="nowrap">
+          <a class="btn ghost sm" href="#" data-missing="1">تعديل</a></td></tr>
+    
+      <tr><td><div class="row" style="gap:8px;flex-wrap:nowrap"><div class="avatar sm t2">ها</div><b>هبة النسور</b></div></td>
+        <td dir="ltr" class="right">heba</td>
+        <td><small>الاجتماعيات — السابع - أ، الاجتماعيات — الثامن - أ، الاجتماعيات — التاسع - ب</small></td>
+        
+        <td class="hide-sm" dir="ltr">0796666666</td>
+        <td><span class="badge ok">فعّال</span></td>
+        <td class="nowrap">
+          <a class="btn ghost sm" href="#" data-missing="1">تعديل</a></td></tr>
+    
+      <tr><td><div class="row" style="gap:8px;flex-wrap:nowrap"><div class="avatar sm t3">يا</div><b>يوسف الشرع</b></div></td>
+        <td dir="ltr" class="right">yousef</td>
+        <td><small>التربية الإسلامية — السابع - أ، التربية الإسلامية — الثامن - أ، التربية الإسلامية — التاسع - ب</small></td>
+        
+        <td class="hide-sm" dir="ltr">0795555555</td>
+        <td><span class="badge ok">فعّال</span></td>
+        <td class="nowrap">
+          <a class="btn ghost sm" href="#" data-missing="1">تعديل</a></td></tr>
+    
+    </tbody>
+  </table></div>
+</div>
+
+    </main>
+  </div>
+  <nav class="bottom-nav">
+    
+      <a href="admin-0.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>الرئيسية</span>
+        
+        
+      </a>
+    
+      <a href="admin-8.html" class="on">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.3-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 010 6.8M18 14.8c2 .7 3.2 2.4 3.5 5.2"/></svg><span>المستخدمون</span>
+        
+        
+      </a>
+    
+      <a href="admin-17.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 012-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16 13.5h2"/></svg><span>المالية</span>
+        
+        
+      </a>
+    
+      <a href="admin-18.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>المراقبة</span>
+        
+        
+      </a>
+    
+      <a href="admin-19.html" class="">
+        <svg class="svg-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1.1-4.6A8 8 0 1121 12z"/></svg><span>رسائلي</span>
+        <span class="badge solid" data-count="messages" >1</span>
+        
+      </a>
+    
+  </nav>
+</div>
+
+<script>
+  (function(){var sp=document.getElementById('splash');if(sp&&!sp.hidden){window.addEventListener('load',function(){setTimeout(function(){sp.classList.add('hide');setTimeout(function(){sp.remove()},400)},350)});}
+   var pg=document.getElementById('navprog');
+   document.addEventListener('click',function(e){var a=e.target.closest('a[href]');if(!a||e.defaultPrevented||e.metaKey||e.ctrlKey||a.target==='_blank'||a.hasAttribute('download'))return;
+     var h=a.getAttribute('href');if(!h||h[0]==='#'||/^(mailto|tel|javascript):/.test(h)||a.origin!==location.origin)return;pg.classList.add('go');});
+   document.addEventListener('submit',function(e){var f=e.target;if(!f.target||f.target==='_self')setTimeout(function(){if(!e.defaultPrevented)pg.classList.add('go')},0);});
+   window.addEventListener('pageshow',function(){pg.classList.remove('go')});})();
+  if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/sw.js').catch(function(){}); }
+  var end = document.getElementById('end'); if (end) end.scrollIntoView();
+</script>
+
+<div class="push-nudge" id="pushNudge" hidden>
+  <span>🔔 فعّل الإشعارات ليصلك كل جديد على هاتفك</span>
+  <a class="btn accent sm" href="admin-20.html">تفعيل</a>
+  <button class="linkbtn" id="nudgeX" aria-label="إخفاء">×</button>
+</div>
+<script>
+(function(){
+  // تحديث عدّادات الإشعارات والرسائل كل دقيقة
+  function tick(){ fetch('/api/notifications/summary',{credentials:'same-origin'}).then(function(r){return r.ok?r.json():null}).then(function(d){
+    if(!d) return; [['unread',d.unread],['messages',d.messages]].forEach(function(p){
+      document.querySelectorAll('[data-count="'+p[0]+'"]').forEach(function(el){ el.textContent=p[1]; el.hidden=!p[1]; }); });
+  }).catch(function(){}); }
+  setInterval(tick, 60000);
+  // تذكير بتفعيل إشعارات الجوال
+  var n=document.getElementById('pushNudge'), seen=false;
+  try{ seen=localStorage.getItem('nudge-off')==='1'; }catch(e){}
+  if(n && !seen && 'Notification' in window && Notification.permission==='default' && location.pathname!=='/notifications'){ n.hidden=false; }
+  document.getElementById('nudgeX') && (document.getElementById('nudgeX').onclick=function(){ n.hidden=true; try{localStorage.setItem('nudge-off','1')}catch(e){} });
+})();
+</script>
+
 <div class="demo-toast" id="demoToast" hidden></div>
 <script>
-(function(){var MAP={"/admin/": "admin-0.html", "/admin/schedule?class_id=2": "admin-1.html", "/admin/academics?class_id=2": "admin-2.html", "/admin/users": "admin-3.html", "/admin/classes": "admin-4.html", "/admin/schedule": "admin-5.html", "/admin/academics": "admin-6.html", "/admin/attendance": "admin-7.html", "/admin/gradebook": "admin-8.html", "/admin/certificates": "admin-9.html", "/calendar": "admin-10.html", "/honor": "admin-11.html", "/finance/": "admin-12.html", "/admin/messages": "admin-13.html", "/messages": "admin-14.html", "/notifications": "admin-15.html", "/announcements": "admin-16.html", "/admin/school": "admin-17.html", "/admin/subscription": "admin-18.html", "/account": "admin-19.html", "/admin/users?role=student": "admin-20.html", "/admin/academics?class_id=1": "admin-21.html", "/admin/academics?class_id=3": "admin-22.html", "/students/10?tab=evaluations": "admin-23.html", "/students/13?tab=evaluations": "admin-24.html", "/admin/import": "admin-25.html", "/admin/users?role=teacher": "admin-26.html", "/admin/users?role=parent": "admin-27.html", "/admin/users?role=admin": "admin-28.html", "/admin/users?role=accountant": "admin-29.html", "/admin/users/20": "admin-30.html", "/admin/users/17": "admin-31.html", "/students/13": "admin-32.html", "/students/10": "admin-33.html", "/admin/schedule?class_id=1": "admin-34.html", "/admin/schedule?class_id=3": "admin-35.html", "/attendance/take?day=2026-11-04": "admin-36.html", "/attendance/take?class_id=1&day=2026-11-04": "admin-37.html", "/attendance/take?class_id=2&day=2026-11-04": "admin-38.html", "/attendance/take?class_id=3&day=2026-11-04": "admin-39.html", "/students/10?tab=attendance": "admin-40.html", "/students/13?tab=attendance": "admin-41.html", "/students/13?tab=exams": "admin-42.html", "/students/13/report-card?term=1": "admin-43.html", "/students/10?tab=exams": "admin-44.html", "/students/10/report-card?term=1": "admin-45.html", "/certificates/1": "admin-46.html", "/calendar?m=2026-10": "admin-47.html", "/calendar?m=2026-12": "admin-48.html", "/honor?period=week": "admin-49.html", "/honor?period=month": "admin-50.html", "/honor?period=year": "admin-51.html", "/finance/staff": "admin-52.html", "/finance/expenses": "admin-53.html", "/finance/accounts": "admin-54.html", "/finance/reports/period": "admin-55.html", "/finance/cards": "admin-56.html", "/finance/students": "admin-57.html", "/finance/billing": "admin-58.html", "/finance/inquiries": "admin-59.html", "/finance/desk": "admin-60.html", "/finance/payment-split": "admin-61.html", "/finance/years": "admin-62.html", "/finance/parents/new": "admin-63.html", "/finance/reports/payments-detail": "admin-64.html", "/finance/parents/5": "admin-65.html"};var TX={"bar": "نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل", "switch": "تغيير الحساب", "filter": "هذا التصفية غير متاحة في نسخة العرض", "save": "الحفظ معطّل في نسخة العرض — ويتم فوراً في النسخة الكاملة ✓", "missing": "هذه الصفحة غير مضمّنة في نسخة العرض", "bad": "بيانات الدخول غير صحيحة. استخدم أحد الحسابات التجريبية.", "demo": "حسابات تجريبية", "pw": "كلمة المرور لجميع الحسابات", "code": "رمز المدرسة", "roles": {"admin": "الإدارة", "teacher": "معلم", "parent": "ولي أمر", "student": "طالب", "accountant": "المحاسب"}};var HOME="index.html";var t;
+(function(){var MAP={"/admin/": "admin-0.html", "/finance/statements": "admin-1.html", "/finance/statements?tab=income": "admin-2.html", "/bus": "admin-3.html", "/finance/routes": "admin-4.html", "/finance/accounts": "admin-5.html", "/admin/schedule?class_id=2": "admin-6.html", "/admin/academics?class_id=2": "admin-7.html", "/admin/users": "admin-8.html", "/admin/classes": "admin-9.html", "/admin/schedule": "admin-10.html", "/admin/academics": "admin-11.html", "/admin/attendance": "admin-12.html", "/admin/gradebook": "admin-13.html", "/admin/certificates": "admin-14.html", "/calendar": "admin-15.html", "/honor": "admin-16.html", "/finance/": "admin-17.html", "/admin/messages": "admin-18.html", "/messages": "admin-19.html", "/notifications": "admin-20.html", "/announcements": "admin-21.html", "/admin/school": "admin-22.html", "/admin/subscription": "admin-23.html", "/account": "admin-24.html", "/admin/users?role=student": "admin-25.html", "/admin/academics?class_id=1": "admin-26.html", "/admin/academics?class_id=3": "admin-27.html", "/students/10?tab=evaluations": "admin-28.html", "/students/13?tab=evaluations": "admin-29.html", "/finance/staff": "admin-30.html", "/finance/expenses": "admin-31.html", "/finance/reports/period": "admin-32.html", "/finance/cards": "admin-33.html", "/finance/journal": "admin-34.html", "/finance/budget": "admin-35.html", "/finance/statements?tab=position&to=2026-11-11": "admin-36.html", "/finance/statements?from=2026-01-01&tab=income&to=2026-11-11": "admin-37.html", "/bus?route=1&trip=am": "admin-38.html", "/bus?route=1&trip=pm": "admin-39.html", "/finance/drivers": "admin-40.html", "/finance/attendance": "admin-41.html", "/finance/accounts?tab=coa": "admin-42.html", "/finance/accounts?tab=cc": "admin-43.html", "/finance/accounts?tab=disc": "admin-44.html", "/admin/import": "admin-45.html", "/admin/users?role=teacher": "admin-46.html", "/admin/users?role=parent": "admin-47.html", "/admin/users?role=admin": "admin-48.html", "/admin/users?role=accountant": "admin-49.html", "/admin/users/20": "admin-50.html", "/admin/users/17": "admin-51.html", "/students/13": "admin-52.html", "/students/10": "admin-53.html", "/admin/schedule?class_id=1": "admin-54.html", "/admin/schedule?class_id=3": "admin-55.html", "/attendance/take?day=2026-11-11": "admin-56.html", "/attendance/take?class_id=1&day=2026-11-11": "admin-57.html", "/attendance/take?class_id=2&day=2026-11-11": "admin-58.html", "/attendance/take?class_id=3&day=2026-11-11": "admin-59.html", "/students/10?tab=attendance": "admin-60.html", "/students/13?tab=attendance": "admin-61.html", "/students/13?tab=exams": "admin-62.html", "/students/13/report-card?term=1": "admin-63.html", "/students/10?tab=exams": "admin-64.html", "/students/10/report-card?term=1": "admin-65.html"};var TX={"bar": "نسخة عرض تجريبية · التنقل يعمل والحفظ معطّل", "switch": "تغيير الحساب", "filter": "هذا التصفية غير متاحة في نسخة العرض", "save": "الحفظ معطّل في نسخة العرض — ويتم فوراً في النسخة الكاملة ✓", "missing": "هذه الصفحة غير مضمّنة في نسخة العرض", "bad": "بيانات الدخول غير صحيحة. استخدم أحد الحسابات التجريبية.", "demo": "حسابات تجريبية", "pw": "كلمة المرور لجميع الحسابات", "code": "رمز المدرسة", "roles": {"admin": "الإدارة", "teacher": "معلم", "parent": "ولي أمر", "student": "طالب", "accountant": "المحاسب"}};var HOME="index.html";var t;
 function toast(m){var el=document.getElementById('demoToast');el.textContent=m;el.hidden=false;clearTimeout(t);t=setTimeout(function(){el.hidden=true},2600);}
 function norm(path,p){var a=[];p.forEach(function(v,k){if(v&&k!=='_csrf')a.push([k,v]);});a.sort(function(x,y){return x[0]<y[0]?-1:x[0]>y[0]?1:(x[1]<y[1]?-1:1)});
  var qs=a.map(function(x){return encodeURIComponent(x[0])+'='+encodeURIComponent(x[1]).replace(/%20/g,'+')}).join('&');return path+(qs?'?'+qs:'');}
@@ -59,4 +354,5 @@ document.addEventListener('submit',function(e){var f=e.target;e.preventDefault()
 document.addEventListener('click',function(e){var a=e.target.closest('a[data-missing]');if(a){e.preventDefault();toast(TX.missing);}});
 var end=document.getElementById('end');if(end)end.scrollIntoView();
 })();
-</script></body></html>
+</script></body>
+</html>
